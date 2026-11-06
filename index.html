@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <title>ثبت‌کننده ساعت مطالعه</title>
-  <meta name="theme-color" content="#0a1018" />
+  <meta name="theme-color" content="#0e0d0b" />
   <meta name="mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -16,51 +16,51 @@
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&family=Vazirmatn:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <style>
     :root, [data-theme="dark"] {
-      --form-label: #5eead4;
-      --greeting: #f0d78c;
-      --bg: #0a1018;
-      --bg-card: rgba(16, 28, 36, 0.94);
-      --bg-input: rgba(12, 22, 30, 0.98);
-      --border: rgba(45, 212, 191, 0.32);
-      --border-light: rgba(212, 168, 75, 0.45);
-      --text: #f5f0e6;
-      --text-muted: #a8c5c0;
-      --text-dim: #6b8a85;
-      --accent: #2dd4bf;
-      --accent-soft: #5eead4;
-      --accent-dim: rgba(45, 212, 191, 0.14);
-      --gold: #d4a84b;
-      --gold-soft: #e8c76a;
-      --success: #4ade80;
-      --danger: #f87171;
-      --radius: 14px;
-      --radius-sm: 10px;
-      --shadow: 0 12px 40px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(45, 212, 191, 0.1);
-      --ai-bg: rgba(20, 40, 45, 0.55);
-      --glow: 0 0 50px rgba(45, 212, 191, 0.1);
+      --form-label: #f0e0c8;
+      --greeting: #ffe8c8;
+      --bg: #0a0907;
+      --bg-card: rgba(40, 34, 26, 0.93);
+      --bg-input: rgba(30, 25, 20, 0.98);
+      --border: rgba(232, 200, 150, 0.4);
+      --border-light: rgba(245, 220, 170, 0.6);
+      --text: #fff8ee;
+      --text-muted: #d8c8b0;
+      --text-dim: #908070;
+      --accent: #f0d4a0;
+      --accent-soft: #ffe8c0;
+      --accent-dim: rgba(240, 212, 160, 0.2);
+      --gold: #e8c878;
+      --gold-soft: #f5dc9a;
+      --success: #d4c090;
+      --danger: #e09090;
+      --radius: 20px;
+      --radius-sm: 14px;
+      --shadow: 0 16px 48px rgba(0, 0, 0, 0.55), 0 0 0 1px rgba(232, 200, 150, 0.18), 0 0 40px rgba(240, 212, 160, 0.08);
+      --ai-bg: rgba(44, 36, 26, 0.72);
+      --glow: 0 0 72px rgba(240, 212, 160, 0.16);
     }
-    [data-theme="light"] #todayShamsi { color: #0f3d3a !important; }
+    [data-theme="light"] #todayShamsi { color: #4a453c !important; }
     [data-theme="light"] {
-      --form-label: #0f766e;
-      --greeting: #92640a;
-      --bg: #f7f3ea;
-      --bg-card: rgba(255, 252, 245, 0.95);
-      --bg-input: #fffef9;
-      --border: rgba(13, 148, 136, 0.28);
-      --border-light: rgba(180, 120, 40, 0.4);
-      --text: #1a2e2c;
-      --text-muted: #3d6b66;
-      --text-dim: #6b8f8a;
-      --accent: #0d9488;
-      --accent-soft: #14b8a6;
-      --accent-dim: rgba(13, 148, 136, 0.12);
-      --gold: #b8860b;
-      --gold-soft: #d4a017;
-      --success: #15803d;
-      --danger: #dc2626;
-      --shadow: 0 10px 32px rgba(20, 60, 55, 0.1), 0 0 0 1px rgba(13, 148, 136, 0.12);
-      --ai-bg: rgba(240, 253, 250, 0.92);
-      --glow: 0 0 40px rgba(13, 148, 136, 0.08);
+      --form-label: #6b6358;
+      --greeting: #5c5348;
+      --bg: #f7f4ef;
+      --bg-card: rgba(255, 253, 250, 0.95);
+      --bg-input: #faf8f4;
+      --border: rgba(160, 148, 130, 0.28);
+      --border-light: rgba(140, 128, 110, 0.4);
+      --text: #2a2620;
+      --text-muted: #5c554c;
+      --text-dim: #8a8278;
+      --accent: #6b6358;
+      --accent-soft: #8a7f70;
+      --accent-dim: rgba(107, 99, 88, 0.1);
+      --gold: #8a7f70;
+      --gold-soft: #a89888;
+      --success: #8a7f70;
+      --danger: #b06060;
+      --shadow: 0 10px 32px rgba(40, 35, 28, 0.08), 0 0 0 1px rgba(160, 148, 130, 0.12);
+      --ai-bg: rgba(250, 248, 244, 0.92);
+      --glow: 0 0 40px rgba(107, 99, 88, 0.06);
     }
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
@@ -82,12 +82,15 @@
       inset: 0;
       z-index: -2;
       pointer-events: none;
-      background-color: #0a1018;
+      filter: blur(28px);
+      transform: scale(1.08);
+      background-color: #0a0907;
       background-image:
-        radial-gradient(ellipse 100% 60% at 50% -5%, rgba(45, 212, 191, 0.18), transparent 55%),
-        radial-gradient(ellipse 60% 45% at 100% 100%, rgba(212, 168, 75, 0.12), transparent 50%),
-        radial-gradient(ellipse 50% 40% at 0% 80%, rgba(20, 184, 166, 0.1), transparent 50%),
-        linear-gradient(180deg, #0e1a22 0%, #0a1018 45%, #070d12 100%);
+        radial-gradient(ellipse 100% 60% at 50% -4%, rgba(240, 212, 160, 0.24), transparent 54%),
+        radial-gradient(ellipse 55% 45% at 100% 100%, rgba(200, 160, 100, 0.18), transparent 50%),
+        radial-gradient(ellipse 50% 40% at 0% 85%, rgba(180, 140, 90, 0.14), transparent 48%),
+        radial-gradient(ellipse 42% 32% at 75% 20%, rgba(245, 220, 170, 0.1), transparent 52%),
+        linear-gradient(175deg, #1c1610 0%, #120f0b 40%, #0a0907 100%);
     }
     body::after {
       content: '';
@@ -95,30 +98,31 @@
       inset: 0;
       z-index: -1;
       pointer-events: none;
+      filter: blur(2px);
       background-image:
-        linear-gradient(90deg, rgba(212,168,75,0.04) 1px, transparent 1px),
-        linear-gradient(0deg, rgba(45,212,191,0.04) 1px, transparent 1px),
-        repeating-linear-gradient(45deg, transparent, transparent 18px, rgba(212,168,75,0.03) 18px, rgba(212,168,75,0.03) 19px),
-        repeating-linear-gradient(-45deg, transparent, transparent 18px, rgba(45,212,191,0.025) 18px, rgba(45,212,191,0.025) 19px);
-      background-size: 36px 36px, 36px 36px, 40px 40px, 40px 40px;
-      opacity: 0.7;
+        linear-gradient(90deg, rgba(224,201,160,0.045) 1px, transparent 1px),
+        linear-gradient(0deg, rgba(200,180,150,0.035) 1px, transparent 1px),
+        radial-gradient(circle at 18% 28%, rgba(224,201,160,0.06) 0%, transparent 42%),
+        radial-gradient(circle at 82% 72%, rgba(180,150,110,0.05) 0%, transparent 45%);
+      background-size: 40px 40px, 40px 40px, 100% 100%, 100% 100%;
+      opacity: 0.85;
     }
     body[data-theme="light"]::before {
-      background-color: #f7f3ea;
+      background-color: #f7f4ef;
       background-image:
-        radial-gradient(ellipse 110% 65% at 50% -5%, rgba(20, 184, 166, 0.16), transparent 55%),
-        radial-gradient(ellipse 65% 50% at 100% 95%, rgba(212, 168, 75, 0.14), transparent 50%),
-        radial-gradient(ellipse 50% 40% at 0% 80%, rgba(13, 148, 136, 0.1), transparent 50%),
-        linear-gradient(180deg, #faf6ee 0%, #f0ebe0 50%, #e8f5f2 100%);
+        radial-gradient(ellipse 100% 60% at 50% -8%, rgba(180, 168, 152, 0.12), transparent 55%),
+        radial-gradient(ellipse 55% 45% at 100% 100%, rgba(160, 148, 130, 0.09), transparent 50%),
+        radial-gradient(ellipse 45% 35% at 0% 80%, rgba(140, 128, 110, 0.06), transparent 50%),
+        linear-gradient(175deg, #faf8f4 0%, #f4f0ea 45%, #ebe6de 100%);
     }
     body[data-theme="light"]::after {
       background-image:
-        linear-gradient(90deg, rgba(180,134,11,0.06) 1px, transparent 1px),
-        linear-gradient(0deg, rgba(13,148,136,0.05) 1px, transparent 1px),
-        repeating-linear-gradient(45deg, transparent, transparent 18px, rgba(180,134,11,0.04) 18px, rgba(180,134,11,0.04) 19px),
-        repeating-linear-gradient(-45deg, transparent, transparent 18px, rgba(13,148,136,0.035) 18px, rgba(13,148,136,0.035) 19px);
-      background-size: 36px 36px, 36px 36px, 40px 40px, 40px 40px;
-      opacity: 0.75;
+        linear-gradient(90deg, rgba(140,128,110,0.05) 1px, transparent 1px),
+        linear-gradient(0deg, rgba(120,110,95,0.04) 1px, transparent 1px),
+        radial-gradient(circle at 25% 25%, rgba(180,168,152,0.05) 0%, transparent 45%),
+        radial-gradient(circle at 75% 80%, rgba(160,148,130,0.04) 0%, transparent 40%);
+      background-size: 42px 42px, 42px 42px, 100% 100%, 100% 100%;
+      opacity: 0.8;
     }
     [data-theme="light"] .card {
       background: rgba(255, 252, 245, 0.92);
@@ -139,13 +143,13 @@
       background: transparent;
     }
     .login-box {
-      background: rgba(24, 24, 40, 0.65);
-      border: 1px solid rgba(139, 92, 246, 0.3);
-      border-radius: 22px;
+      background: rgba(28, 22, 16, 0.75);
+      border: 1px solid rgba(196, 181, 160, 0.3);
+      border-radius: 26px;
       padding: 40px 36px;
       width: 100%;
       max-width: 380px;
-      box-shadow: 0 12px 40px rgba(88, 28, 135, 0.35), 0 0 60px rgba(34, 211, 238, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.12);
+      box-shadow: 0 12px 40px rgba(40, 25, 10, 0.4), 0 0 60px rgba(196, 181, 160, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.1);
       backdrop-filter: blur(28px) saturate(180%);
       -webkit-backdrop-filter: blur(28px) saturate(180%);
       text-align: center;
@@ -187,13 +191,13 @@
       transform: translateY(-1px);
     }
     .login-error { color: var(--danger); font-size: 0.85rem; margin-top: 12px; min-height: 20px; }
-    #app { display: block; max-width: 1280px; margin: 0 auto; padding: 28px 28px 80px; position: relative; z-index: 1; }
+    #app { display: block; max-width: 1280px; margin: 0 auto; padding: 16px 28px 16px; position: relative; z-index: 1; }
     @media (min-width: 1400px) {
-      #app { max-width: 1400px; padding: 32px 36px 90px; }
+      #app { max-width: 1400px; padding: 20px 36px 20px; }
       body { font-size: 17.5px; }
     }
     @media (min-width: 1100px) and (max-width: 1399px) {
-      #app { max-width: 1200px; padding: 28px 28px 80px; }
+      #app { max-width: 1200px; padding: 16px 28px 16px; }
       body { font-size: 17px; }
     }
     header {
@@ -203,7 +207,7 @@
     }
     header h1 {
       font-size: 1.35rem; font-weight: 600;
-      background: linear-gradient(135deg, #e8c76a, #2dd4bf);
+      background: linear-gradient(135deg, #f0dcc0, #d4bc96);
       -webkit-background-clip: text; background-clip: text;
       color: transparent;
       -webkit-text-fill-color: transparent;
@@ -224,25 +228,25 @@
     .mc-face { fill: #0a141a; }
     [data-theme="light"] .mc-face { fill: #f8fffe; }
     .mini-clock {
-      background: linear-gradient(145deg, rgba(20, 40, 48, 0.98), rgba(8, 16, 22, 1));
-      border: 2.5px solid rgba(212, 168, 75, 0.7);
-      box-shadow: 0 0 18px rgba(45, 212, 191, 0.3), inset 0 1px 0 rgba(255,255,255,0.1);
+      background: linear-gradient(145deg, rgba(32, 18, 20, 0.98), rgba(14, 10, 10, 1));
+      border: 2.5px solid rgba(180, 168, 152, 0.6);
+      box-shadow: 0 0 18px rgba(196, 181, 160, 0.22), inset 0 1px 0 rgba(255,255,255,0.1);
     }
     [data-theme="light"] .mini-clock {
       background: linear-gradient(145deg, #ffffff, #eef9f6);
       border-color: rgba(13, 148, 136, 0.55);
       box-shadow: 0 2px 14px rgba(13, 148, 136, 0.22);
     }
-    .mc-ring { fill: none; stroke: #2dd4bf; stroke-width: 1.5; opacity: 0.65; }
-    [data-theme="light"] .mc-ring { stroke: #0d9488; opacity: 0.55; }
-    .mc-tick { stroke: #f0d78c; stroke-width: 2; stroke-linecap: round; }
-    [data-theme="light"] .mc-tick { stroke: #b8860b; }
-    .mc-hour { stroke: #ffe08a; stroke-width: 3.4; stroke-linecap: round; }
-    .mc-min { stroke: #5eead4; stroke-width: 2.6; stroke-linecap: round; }
+    .mc-ring { fill: none; stroke: #c4b5a0; stroke-width: 1.5; opacity: 0.65; }
+    [data-theme="light"] .mc-ring { stroke: #6b6358; opacity: 0.55; }
+    .mc-tick { stroke: #d0c4b0; stroke-width: 2; stroke-linecap: round; }
+    [data-theme="light"] .mc-tick { stroke: #c48a7a; }
+    .mc-hour { stroke: #e8e0d4; stroke-width: 3.4; stroke-linecap: round; }
+    .mc-min { stroke: #d8ccb8; stroke-width: 2.6; stroke-linecap: round; }
     .mc-sec { stroke: #ff6b7a; stroke-width: 1.5; stroke-linecap: round; }
-    .mc-center { fill: #ffe08a; }
+    .mc-center { fill: #e8e0d4; }
     [data-theme="light"] .mc-hour { stroke: #92400e; stroke-width: 3.4; }
-    [data-theme="light"] .mc-min { stroke: #0f766e; stroke-width: 2.6; }
+    [data-theme="light"] .mc-min { stroke: #6b6358; stroke-width: 2.6; }
     [data-theme="light"] .mc-sec { stroke: #dc2626; stroke-width: 1.5; }
     [data-theme="light"] .mc-center { fill: #92400e; }
     @media (min-width: 900px) {
@@ -265,13 +269,13 @@
       box-shadow: 0 4px 16px rgba(0,0,0,0.12), inset 0 1px 0 rgba(255,255,255,0.08);
     }
     .btn:hover {
-      border-color: rgba(45, 212, 191, 0.45);
+      border-color: rgba(196, 181, 160, 0.45);
       color: var(--accent);
-      background: rgba(45, 212, 191, 0.1);
-      box-shadow: 0 6px 20px rgba(45, 212, 191, 0.15), inset 0 1px 0 rgba(255,255,255,0.12);
+      background: rgba(196, 181, 160, 0.1);
+      box-shadow: 0 6px 20px rgba(196, 181, 160, 0.15), inset 0 1px 0 rgba(255,255,255,0.12);
     }
     .btn-primary {
-      background: linear-gradient(135deg, #0f766e 0%, #14b8a6 40%, #d4a84b 100%);
+      background: linear-gradient(135deg, #6b5e4e 0%, #a89070 45%, #d4bc96 100%);
       border: 1px solid rgba(212, 168, 75, 0.45);
       color: #fff;
       font-weight: 700;
@@ -285,7 +289,7 @@
       transform: translateY(-1px);
     }
     [data-theme="light"] .btn-primary {
-      background: linear-gradient(135deg, #0f766e 0%, #0d9488 50%, #b45309 100%);
+      background: linear-gradient(135deg, #5c5348 0%, #6b6358 50%, #8a7f70 100%);
       color: #fff;
       border-color: rgba(180, 83, 9, 0.35);
       box-shadow: 0 4px 18px rgba(13, 148, 136, 0.25);
@@ -316,12 +320,12 @@
       border-color: rgba(13, 148, 136, 0.3);
     }
     [data-theme="light"] .btn-primary {
-      background: linear-gradient(135deg, #0f766e 0%, #14b8a6 45%, #d4a017 100%);
+      background: linear-gradient(135deg, #6b5e4e 0%, #a89070 45%, #d4bc96 100%);
       border: 1px solid rgba(180, 134, 11, 0.4);
       box-shadow: 0 4px 16px rgba(13, 148, 136, 0.22), inset 0 1px 0 rgba(255,255,255,0.3);
     }
     [data-theme="light"] .btn-primary:hover {
-      background: linear-gradient(135deg, #0d9488 0%, #d4a017 100%);
+      background: linear-gradient(135deg, #6b6358 0%, #a89888 100%);
     }
     [data-theme="light"] .btn-danger {
       background: rgba(220,38,38,0.08);
@@ -386,7 +390,10 @@
     .card.collapsible.collapsed > h2 .toggle-icon { transform: rotate(-90deg); }
     .card.collapsible .collapsible-body {
       overflow: hidden; transition: max-height 0.35s ease, opacity 0.25s ease, margin 0.25s;
-      max-height: 3000px; opacity: 1; margin-top: 16px;
+      max-height: 8000px; opacity: 1; margin-top: 16px;
+    }
+    #historyCard .collapsible-body {
+      overflow: visible;
     }
     .card.collapsible.collapsed .collapsible-body {
       max-height: 0; opacity: 0; margin-top: 0; pointer-events: none;
@@ -400,11 +407,11 @@
       font-size: 0.95rem; outline: none; transition: border 0.2s; font-family: inherit;
     }
     input:focus, select:focus, textarea:focus {
-      border-color: var(--accent); box-shadow: 0 0 0 2px rgba(224, 144, 96, 0.25);
+      border-color: var(--accent); box-shadow: 0 0 0 2px rgba(196, 181, 160, 0.25);
     }
     select {
       cursor: pointer; appearance: none;
-      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='%2338bdf8' viewBox='0 0 16 16'%3E%3Cpath d='M8 11L3 6h10l-5 5z'/%3E%3C/svg%3E");
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='%23e07a7a' viewBox='0 0 16 16'%3E%3Cpath d='M8 11L3 6h10l-5 5z'/%3E%3C/svg%3E");
       background-repeat: no-repeat; background-position: left 12px center; padding-left: 32px;
     }
     .form-actions { margin-top: 16px; display: flex; gap: 10px; }
@@ -425,23 +432,23 @@
       transition: all 0.25s ease;
     }
     .tab.active {
-      background: rgba(56,189,248,0.15);
-      border-color: rgba(56,189,248,0.5);
+      background: rgba(196,181,160,0.15);
+      border-color: rgba(196,181,160,0.5);
       color: var(--accent);
-      box-shadow: 0 2px 12px rgba(56,189,248,0.12);
+      box-shadow: 0 2px 12px rgba(196,181,160,0.12);
     }
     .tab:hover:not(.active) {
-      border-color: rgba(56,189,248,0.35);
+      border-color: rgba(196,181,160,0.35);
       color: var(--accent-soft);
-      background: rgba(56,189,248,0.08);
+      background: rgba(196,181,160,0.08);
     }
     [data-theme="light"] .tab {
       background: rgba(255,255,255,0.5);
       border: 1px solid rgba(0,0,0,0.06);
     }
     [data-theme="light"] .tab.active {
-      background: rgba(2,132,199,0.12);
-      border-color: rgba(2,132,199,0.4);
+      background: rgba(107,99,88,0.12);
+      border-color: rgba(107,99,88,0.4);
     }
     .chart-area { min-height: 200px; }
     .chart-bars {
@@ -455,7 +462,7 @@
     .chart-bar {
       width: 100%; max-width: 42px;
       background: linear-gradient(180deg, var(--accent-soft) 0%, var(--accent) 100%);
-      border-radius: 6px 6px 3px 3px; transition: height 0.35s ease; min-height: 4px; position: relative;
+      border-radius: 10px 10px 4px 4px; transition: height 0.35s ease; min-height: 4px; position: relative;
     }
     .chart-bar:hover, .chart-bar.active-tip { filter: brightness(1.15); }
     .chart-bar .tooltip {
@@ -522,21 +529,43 @@
     .diff.up { color: var(--success); }
     .diff.down { color: var(--danger); }
     .diff.same { color: var(--text-dim); }
-    .day-group { margin-bottom: 18px; }
-    .day-header {
-      display: flex; justify-content: space-between; align-items: center;
-      padding: 10px 14px;
+    .day-group {
+      margin-bottom: 16px;
+      border: 1.5px solid var(--border-light);
+      border-radius: 20px;
       background: var(--bg-card);
-      border-radius: var(--radius-sm);
-      margin-bottom: 8px;
-      border: 1px solid var(--border);
-      gap: 8px; flex-wrap: wrap;
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
     }
-    [data-theme="light"] .day-header {
-      background: rgba(255, 255, 255, 0.45);
-      border: 1px solid rgba(0, 0, 0, 0.06);
+    .day-group .day-header {
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 12px 16px;
+      background: linear-gradient(135deg, var(--accent-dim), transparent);
+      margin-bottom: 0;
+      border: none;
+      border-bottom: 1px solid var(--border);
+      gap: 10px; flex-wrap: wrap;
+    }
+    .day-group .session-item {
+      margin: 0 10px;
+      padding: 12px 10px;
+      border-bottom: 1px solid var(--border);
+      border-radius: 0;
+    }
+    .day-group .session-item:last-child {
+      border-bottom: none;
+      margin-bottom: 8px;
+    }
+    [data-theme="light"] .day-group {
+      background: rgba(255, 253, 250, 0.95);
+      border-color: rgba(160, 148, 130, 0.28);
+      box-shadow: 0 6px 20px rgba(40, 35, 28, 0.06);
+    }
+    [data-theme="light"] .day-group .day-header {
+      background: linear-gradient(135deg, rgba(107,99,88,0.08), transparent);
+      border-bottom-color: rgba(160, 148, 130, 0.2);
     }
     .day-header .day-title { font-weight: 600; font-size: 0.95rem; }
     .day-header .day-total { color: var(--accent); font-weight: 600; font-size: 0.9rem; }
@@ -570,7 +599,7 @@
     .toast.error { border-color: var(--danger); color: var(--danger); }
     .badge { display: inline-block; font-size: 0.7rem; padding: 2px 8px; border-radius: 6px; margin-left: 6px; }
     .badge-spec { background: transparent; color: #4ade80; border: none; font-weight: 600; padding: 0 4px; }
-    [data-theme="light"] .badge-spec { background: transparent; color: #15803d; border: none; }
+    [data-theme="light"] .badge-spec { background: transparent; color: #6b6358; border: none; }
     .badge-gen { background: transparent; color: #eab308; border: none; font-weight: 600; padding: 0 4px; }
     [data-theme="light"] .badge-gen { background: transparent; color: #a16207; border: none; }
     optgroup { background: var(--bg-card); color: var(--text-muted); font-weight: 600; }
@@ -589,18 +618,18 @@
     }
     .ai-box {
       background: rgba(12, 25, 41, 0.5);
-      border: 1px solid rgba(56, 189, 248, 0.35);
+      border: 1px solid rgba(196, 181, 160, 0.35);
       border-radius: var(--radius);
       padding: 18px;
       margin-top: 0;
       backdrop-filter: blur(16px) saturate(150%);
       -webkit-backdrop-filter: blur(16px) saturate(150%);
-      box-shadow: 0 4px 20px rgba(56, 189, 248, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.06);
+      box-shadow: 0 4px 20px rgba(196, 181, 160, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.06);
     }
     [data-theme="light"] .ai-box {
-      background: rgba(240, 249, 255, 0.6);
-      border: 1px solid rgba(2, 132, 199, 0.3);
-      box-shadow: 0 4px 20px rgba(2, 132, 199, 0.06), inset 0 1px 0 rgba(255, 255, 255, 0.8);
+      background: rgba(255, 250, 240, 0.7);
+      border: 1px solid rgba(107, 99, 88, 0.3);
+      box-shadow: 0 4px 20px rgba(107, 99, 88, 0.06), inset 0 1px 0 rgba(255, 255, 255, 0.8);
     }
     .ai-box .ai-title {
       font-weight: 600; color: var(--accent); margin-bottom: 10px;
@@ -721,13 +750,31 @@
     }
     .install-banner.show { display: flex; }
     .install-banner p { font-size: 0.9rem; color: var(--text); margin: 0; }
-    [data-theme="dark"] .card { border-color: rgba(45, 212, 191, 0.32); }
-    [data-theme="dark"] .stat-card { border-color: rgba(220, 160, 120, 0.45); }
-    [data-theme="dark"] input, [data-theme="dark"] select, [data-theme="dark"] textarea {
-      border-color: rgba(220, 160, 120, 0.4);
+    [data-theme="dark"] .card {
+      border-color: rgba(210, 190, 160, 0.34);
+      box-shadow: 0 12px 40px rgba(0,0,0,0.45), 0 0 40px rgba(224,201,160,0.06), inset 0 1px 0 rgba(255,255,255,0.06);
     }
-    [data-theme="dark"] .subj-track { border-color: rgba(220, 160, 120, 0.35); }
-    [data-theme="dark"] .ai-box { border-color: rgba(224, 144, 96, 0.45); }
+    [data-theme="dark"] .stat-card {
+      border-color: rgba(224, 201, 160, 0.38);
+      box-shadow: 0 8px 28px rgba(0,0,0,0.35), 0 0 20px rgba(224,201,160,0.05);
+    }
+    [data-theme="dark"] input, [data-theme="dark"] select, [data-theme="dark"] textarea {
+      border-color: rgba(220, 200, 168, 0.4);
+      color: var(--text);
+      background: rgba(28, 24, 20, 0.98);
+    }
+    [data-theme="dark"] select option {
+      background: #221e18;
+      color: #faf6ef;
+    }
+    [data-theme="dark"] .subj-track { border-color: rgba(210, 190, 160, 0.3); }
+    [data-theme="dark"] .ai-box { border-color: rgba(224, 201, 160, 0.4); }
+    [data-theme="dark"] .btn-primary {
+      box-shadow: 0 4px 22px rgba(224,201,160,0.28), inset 0 1px 0 rgba(255,255,255,0.2);
+    }
+    [data-theme="dark"] .option-chip.active {
+      box-shadow: 0 0 0 1px rgba(224,201,160,0.45), 0 10px 28px rgba(224,201,160,0.1);
+    }
 
 
     /* تایمر دایره‌ای لوکس — فیروزه و طلا */
@@ -744,7 +791,7 @@
       margin: 14px auto 18px;
       z-index: 1;
     }
-    .timer-hour {
+    .timer-hour { display:none; 
       position: absolute;
       z-index: 3;
       font-size: 0.95rem;
@@ -758,7 +805,7 @@
     .timer-h3  { top: 50%; right: 2px; transform: translateY(-50%); }
     .timer-h6  { bottom: 2px; left: 50%; transform: translateX(-50%); }
     .timer-h9  { top: 50%; left: 2px; transform: translateY(-50%); }
-    [data-theme="light"] .timer-hour { color: #0f766e; }
+    [data-theme="light"] .timer-hour { display:none;  color: #0f766e; }
     .timer-ring-wrap svg {
       width: 100%;
       height: 100%;
@@ -766,21 +813,22 @@
     }
     .timer-ring-bg {
       fill: none;
-      stroke: rgba(45, 212, 191, 0.22);
-      stroke-width: 10;
+      stroke: rgba(196, 181, 160, 0.22);
+      stroke-width: 8;
     }
     .timer-ring-fg {
       fill: none;
       stroke: url(#timerGrad);
-      stroke-width: 10;
+      stroke-width: 8;
       stroke-linecap: round;
       stroke-dasharray: 565.5;
       stroke-dashoffset: 565.5;
       transition: stroke-dashoffset 0.2s linear;
     }
     .timer-running .timer-ring-fg {
-      stroke-width: 11;
+      stroke-width: 9;
     }
+    [data-theme="light"] .timer-ring-bg { stroke: rgba(107, 99, 88, 0.25); }
     .timer-display {
       position: absolute;
       inset: 0;
@@ -806,8 +854,8 @@
     }
     .timer-running .timer-display { color: var(--accent); }
     [data-theme="light"] .timer-ring-bg { stroke: rgba(13, 148, 136, 0.28); }
-    [data-theme="light"] .timer-display { color: #0f766e; }
-    [data-theme="light"] .timer-running .timer-display { color: #0d9488; }
+    [data-theme="light"] .timer-display { color: #8b6914; }
+    [data-theme="light"] .timer-running .timer-display { color: #6b6358; }
     [data-theme="light"] .timer-display .timer-sub { color: #92640a; }
     .timer-presets {
       display: flex;
@@ -892,7 +940,7 @@
       display: grid; grid-template-columns: repeat(7, 1fr); gap: 4px;
     }
     .cal-day {
-      aspect-ratio: 1; border-radius: 10px;
+      aspect-ratio: 1; border-radius: 14px;
       border: 1px solid transparent;
       background: var(--bg-input);
       color: var(--text);
@@ -958,7 +1006,7 @@
 
     /* ===== بهبود موبایل ===== */
     @media (max-width: 640px) {
-      #app { padding: 10px 10px 90px !important; }
+      #app { padding: 10px 10px 20px !important; }
       header { margin-bottom: 14px !important; padding-bottom: 10px !important; gap: 8px !important; }
       header h1 { font-size: 1.05rem !important; }
       .header-actions { width: 100%; align-items: stretch !important; }
@@ -1014,6 +1062,277 @@
       border: 1px solid var(--border-light); font-family: inherit;
     }
     .cal-tip-btn:hover { filter: brightness(1.1); }
+
+    /* گزینه‌های تست و فیلم — طراحی لوکس */
+    .option-chip {
+      display: flex; flex-direction: column; gap: 8px;
+      padding: 14px 14px; border-radius: 18px;
+      border: 1.5px solid var(--border);
+      background: linear-gradient(145deg, rgba(255,255,255,0.03), transparent);
+      transition: border-color 0.25s, box-shadow 0.25s, background 0.25s;
+    }
+    .option-chip.active {
+      border-color: var(--border-light);
+      background: var(--accent-dim);
+      box-shadow: 0 0 0 1px var(--border-light), 0 8px 24px rgba(0,0,0,0.12);
+    }
+    .option-chip .chip-head {
+      display: flex; align-items: center; gap: 10px; cursor: pointer; user-select: none;
+    }
+    .option-chip .chip-head input { width: 18px; height: 18px; accent-color: var(--accent); }
+    .option-chip .chip-title { font-weight: 600; color: var(--text); font-size: 0.95rem; }
+    .option-chip .chip-summary {
+      font-size: 0.82rem; color: var(--text-muted); line-height: 1.55;
+      padding: 8px 12px; border-radius: 12px;
+      background: var(--bg-input); border: 1px solid var(--border);
+    }
+    .option-chip .chip-actions { display: flex; gap: 8px; flex-wrap: wrap; }
+    .option-chip .chip-actions .btn {
+      border-radius: 12px; font-size: 0.82rem; padding: 8px 14px;
+    }
+    /* مودال‌های زیباتر */
+    .modal-box {
+      border-radius: 24px !important;
+      border: 1.5px solid var(--border-light) !important;
+      box-shadow: 0 24px 64px rgba(0,0,0,0.45), 0 0 0 1px rgba(255,255,255,0.04) !important;
+      background: var(--bg-card) !important;
+      backdrop-filter: blur(24px) saturate(160%);
+      -webkit-backdrop-filter: blur(24px) saturate(160%);
+    }
+    .modal-box h3 {
+      font-size: 1.15rem !important;
+      background: linear-gradient(135deg, var(--gold-soft), var(--accent));
+      -webkit-background-clip: text; background-clip: text;
+      color: transparent; -webkit-text-fill-color: transparent;
+    }
+    .modal-overlay {
+      backdrop-filter: blur(10px) saturate(120%);
+      background: rgba(0,0,0,0.58) !important;
+    }
+    .modal-preview-box {
+      margin-top: 14px; padding: 14px 16px; border-radius: 16px;
+      background: var(--accent-dim); border: 1px solid var(--border-light);
+      text-align: center; font-weight: 600; color: var(--accent);
+      font-size: 1.02rem; letter-spacing: 0.2px;
+    }
+    /* نمودار نقطه‌ای / خطی */
+    .line-chart-wrap {
+      position: relative; height: 220px; margin-top: 8px;
+      padding: 12px 8px 28px 8px;
+    }
+    .line-chart-svg { width: 100%; height: 100%; overflow: visible; }
+    .line-chart-grid line {
+      stroke: var(--border); stroke-width: 1; opacity: 0.55;
+    }
+    .line-chart-path {
+      fill: none; stroke: url(#lineGrad); stroke-width: 2.8;
+      stroke-linecap: round; stroke-linejoin: round;
+      filter: drop-shadow(0 2px 6px rgba(196,181,160,0.25));
+    }
+    .line-chart-area {
+      fill: url(#lineAreaGrad); opacity: 0.55;
+    }
+    .line-chart-dot {
+      fill: var(--bg-card); stroke: var(--accent); stroke-width: 2.5;
+      transition: r 0.15s;
+      cursor: pointer;
+    }
+    .line-chart-dot:hover { r: 6; fill: var(--accent); }
+    .line-chart-labels {
+      display: flex; justify-content: space-between; margin-top: 4px;
+      padding: 0 4px;
+    }
+    .line-chart-labels span {
+      font-size: 0.68rem; color: var(--text-dim); text-align: center;
+      flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+    }
+    .line-chart-tooltip {
+      position: absolute; pointer-events: none; z-index: 20;
+      background: var(--bg-card); border: 1px solid var(--border-light);
+      border-radius: 12px; padding: 8px 12px; font-size: 0.78rem;
+      box-shadow: var(--shadow); opacity: 0; transition: opacity 0.15s;
+      white-space: nowrap; color: var(--text);
+    }
+    .line-chart-tooltip.show { opacity: 1; }
+
+
+    .hm-row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      direction: ltr;
+      background: var(--bg-input);
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 10px 12px;
+    }
+    .hm-row:focus-within {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 2px var(--accent-dim);
+    }
+    .hm-input {
+      width: 56px !important;
+      min-width: 56px;
+      text-align: center !important;
+      font-size: 1.35rem !important;
+      font-weight: 700 !important;
+      letter-spacing: 1px;
+      background: transparent !important;
+      border: none !important;
+      box-shadow: none !important;
+      color: var(--text) !important;
+      padding: 6px 4px !important;
+      direction: ltr;
+    }
+    .hm-input:focus { outline: none; }
+    .hm-colon {
+      font-size: 1.4rem;
+      font-weight: 800;
+      color: var(--accent);
+      line-height: 1;
+    }
+
+    .time-type-input {
+      width: 100% !important;
+      text-align: center !important;
+      font-size: 1.2rem !important;
+      font-weight: 700 !important;
+      letter-spacing: 2px;
+      direction: ltr;
+      color: var(--text) !important;
+      background: var(--bg-input) !important;
+      border: 1.5px solid var(--border) !important;
+      border-radius: var(--radius-sm) !important;
+      padding: 14px 12px !important;
+    }
+    .time-type-input:focus {
+      border-color: var(--accent) !important;
+      box-shadow: 0 0 0 2px var(--accent-dim) !important;
+      outline: none;
+    }
+    .time-type-input::placeholder {
+      letter-spacing: 0;
+      font-weight: 500;
+      font-size: 0.95rem;
+      color: var(--text-dim);
+    }
+    #historyList {
+      max-height: min(55vh, 560px);
+      overflow-y: auto;
+      overflow-x: hidden;
+      padding: 4px 6px 8px 2px;
+      scrollbar-width: thin;
+      scrollbar-color: var(--accent) var(--bg-input);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      background: rgba(0,0,0,0.08);
+    }
+    [data-theme="light"] #historyList {
+      background: rgba(0,0,0,0.03);
+    }
+    /* وقتی تاریخچه بسته است فضای اضافه نگیرد */
+    #historyCard.collapsed .collapsible-body {
+      max-height: 0 !important;
+      margin-top: 0 !important;
+      opacity: 0 !important;
+    }
+    #historyList::-webkit-scrollbar { width: 8px; }
+    #historyList::-webkit-scrollbar-track {
+      background: var(--bg-input);
+      border-radius: 8px;
+    }
+    #historyList::-webkit-scrollbar-thumb {
+      background: var(--accent);
+      border-radius: 8px;
+      opacity: 0.7;
+    }
+
+
+    .time24-row {
+      display: flex; align-items: center; gap: 8px;
+      flex-direction: row-reverse; /* ساعت راست، دقیقه چپ در RTL */
+      background: var(--bg-input);
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 8px 10px;
+    }
+    .time24-row:focus-within {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 2px var(--accent-dim);
+    }
+    .time24-text {
+      width: 72px !important;
+      min-width: 72px;
+      text-align: center !important;
+      font-size: 1.05rem !important;
+      font-weight: 700 !important;
+      letter-spacing: 1px;
+      background: transparent !important;
+      border: none !important;
+      box-shadow: none !important;
+      color: var(--text) !important;
+      padding: 6px 4px !important;
+      direction: ltr;
+    }
+    .time24-sel {
+      width: 64px !important;
+      min-width: 64px;
+      flex: 0 0 auto;
+      background: var(--accent-dim) !important;
+      border: 1px solid var(--border) !important;
+      border-radius: 10px !important;
+      box-shadow: none !important;
+      padding: 6px 4px !important;
+      text-align: center;
+      font-size: 0.92rem !important;
+      font-weight: 600;
+      color: var(--text) !important;
+      appearance: auto;
+      background-image: none !important;
+      padding-left: 4px !important;
+      cursor: pointer;
+    }
+    .time24-sel option {
+      background: var(--bg-card);
+      color: var(--text);
+    }
+    .time24-sep {
+      font-weight: 700; color: var(--accent); font-size: 1.2rem;
+      flex-shrink: 0;
+    }
+    .time24-label {
+      font-size: 0.72rem; color: var(--text-dim); text-align: center;
+      display: block; margin-bottom: 2px;
+    }
+    .time24-col { display: flex; flex-direction: column; align-items: center; }
+    .option-chip {
+      position: relative;
+      overflow: hidden;
+    }
+    .option-chip::before {
+      content: '';
+      position: absolute; top: 0; right: 0; width: 4px; height: 100%;
+      background: linear-gradient(180deg, var(--accent-soft), var(--accent));
+      opacity: 0; transition: opacity 0.25s;
+      border-radius: 0 18px 18px 0;
+    }
+    .option-chip.active::before { opacity: 1; }
+    .option-chip {
+      background: linear-gradient(145deg, rgba(255,255,255,0.04), rgba(0,0,0,0.08));
+    }
+    [data-theme="light"] .option-chip {
+      background: linear-gradient(145deg, rgba(255,255,255,0.9), rgba(240,235,225,0.5));
+    }
+    .option-chip .chip-title {
+      letter-spacing: 0.2px;
+    }
+    .option-chip .chip-summary {
+      border-radius: 14px;
+      line-height: 1.65;
+    }
+
+
     .cal-tooltip { display: none !important; }
   </style>
 </head>
@@ -1073,12 +1392,6 @@
       </div>
     </div>
 
-    <!-- برنامه امروز مشاور (نمایش سریع) -->
-    <div id="todayPlanBanner" class="card" style="display:none;padding:14px 18px;margin-bottom:16px;border-color:var(--accent);">
-      <div style="font-weight:600;color:var(--accent);margin-bottom:6px;">📋 برنامه امروز از مشاور</div>
-      <div id="todayPlanBannerText" style="font-size:0.95rem;line-height:1.7;"></div>
-    </div>
-
     <!-- تایمر مطالعه -->
     <div class="card timer-card" id="timerCard">
       <h2 style="justify-content:center;cursor:default;">⏱️ تایمر مطالعه</h2>
@@ -1098,6 +1411,7 @@
             <option value="زبان">زبان</option>
             <option value="فارسی">فارسی</option>
             <option value="عربی">عربی</option>
+            <option value="تاریخ">تاریخ</option>
           </optgroup>
         </select>
       </div>
@@ -1110,16 +1424,12 @@
       </div>
       <div class="timer-status" id="timerStatus">درس را انتخاب کن و شروع بزن</div>
       <div class="timer-ring-wrap">
-        <span class="timer-hour timer-h12">۱۲</span>
-        <span class="timer-hour timer-h3">۳</span>
-        <span class="timer-hour timer-h6">۶</span>
-        <span class="timer-hour timer-h9">۹</span>
         <svg viewBox="0 0 200 200" aria-hidden="true">
           <defs>
             <linearGradient id="timerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stop-color="#5eead4"/>
-              <stop offset="50%" stop-color="#2dd4bf"/>
-              <stop offset="100%" stop-color="#d4a84b"/>
+              <stop offset="0%" stop-color="#f0dcc0"/>
+              <stop offset="50%" stop-color="#e0c9a0"/>
+              <stop offset="100%" stop-color="#d4bc96"/>
             </linearGradient>
           </defs>
           <circle class="timer-ring-bg" cx="100" cy="100" r="90"></circle>
@@ -1164,6 +1474,7 @@
                 <option value="زبان">زبان</option>
                 <option value="فارسی">فارسی</option>
                 <option value="عربی">عربی</option>
+                <option value="تاریخ">تاریخ</option>
               </optgroup>
             </select>
           </div>
@@ -1177,43 +1488,52 @@
             <input type="hidden" id="dateDay" value="" />
             <input type="hidden" id="dateMonthYear" value="" />
           </div>
-          <div>
-            <label for="hours">⏰ ساعت</label>
-            <input type="number" id="hours" min="0" max="24" value="" placeholder="۰" />
+          <div style="grid-column:1/-1;">
+            <label>⏰ بازه زمانی مطالعه</label>
+            <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;">
+              <input type="text" id="studyTimeDisplay" readonly placeholder="از … تا … (بزن برای انتخاب)" style="flex:1;min-width:160px;cursor:pointer;" onclick="openStudyTimeModal()" />
+              <button type="button" class="btn btn-sm" onclick="openStudyTimeModal()">🕐 انتخاب بازه</button>
+              <span id="studyDurationHint" style="font-size:0.85rem;color:var(--accent);font-weight:600;min-width:90px;">—</span>
+            </div>
+            <input type="hidden" id="timeFrom" value="" />
+            <input type="hidden" id="timeTo" value="" />
+            <input type="hidden" id="studyMinutes" value="0" />
           </div>
-          <div>
-            <label for="minutes">⏱️ دقیقه</label>
-            <input type="number" id="minutes" min="0" max="59" value="" placeholder="۰" />
-          </div>
-          <div>
-            <label for="tests">📝 تعداد تست</label>
-            <input type="number" id="tests" min="0" max="9999" value="" placeholder="۰" />
-          </div>
-          <div>
-            <label for="videoWatched">🎬 فیلم آموزشی</label>
-            <select id="videoWatched" onchange="toggleVideoHours()">
-              <option value="no">دیده نشده</option>
-              <option value="yes">دیده شده</option>
-            </select>
-          </div>
-          <div id="videoHoursWrap" style="display:none;">
-            <label for="videoHours">⏱️ ساعت فیلم</label>
-            <input type="number" id="videoHours" min="0" max="24" value="" placeholder="۰" />
-          </div>
-          <div id="videoMinutesWrap" style="display:none;">
-            <label for="videoMinutes">⏱️ دقیقه فیلم</label>
-            <input type="number" id="videoMinutes" min="0" max="59" value="" placeholder="۰" />
-          </div>
-          <div id="testSectionWrap">
-            <label for="testSection">📝 تست‌های زده‌شده</label>
-            <input type="text" id="testSection" placeholder="مثلاً فصل ۳ — گردش مواد" />
-          </div>
-          <div>
-            <label style="display:flex;align-items:center;gap:8px;cursor:pointer;">
-              <input type="checkbox" id="descriptiveStudy" style="width:auto;accent-color:var(--accent);" />
-              📄 مطالعه تشریحی
+          <div class="option-chip" id="descChip">
+            <label class="chip-head">
+              <input type="checkbox" id="descriptiveStudy" onchange="document.getElementById('descChip').classList.toggle('active', this.checked)" />
+              <span class="chip-title">📄 مطالعه تشریحی</span>
             </label>
           </div>
+          <div class="option-chip" id="testsChip">
+            <label class="chip-head">
+              <input type="checkbox" id="testsEnabled" onchange="onTestsToggle()" />
+              <span class="chip-title">📝 تست زدم</span>
+            </label>
+            <div id="testsSummary" class="chip-summary" style="display:none;"></div>
+            <div class="chip-actions">
+              <button type="button" class="btn btn-sm btn-primary" id="testsDetailBtn" style="display:none;" onclick="openTestsModal()">✨ جزئیات تست</button>
+            </div>
+          </div>
+          <div class="option-chip" id="videoChip" style="grid-column:1/-1;">
+            <label class="chip-head">
+              <input type="checkbox" id="videoEnabled" onchange="onVideoToggle()" />
+              <span class="chip-title">🎬 فیلم آموزشی</span>
+            </label>
+            <div id="videoSummary" class="chip-summary" style="display:none;"></div>
+            <div class="chip-actions">
+              <button type="button" class="btn btn-sm btn-primary" id="videoDetailBtn" style="display:none;" onclick="openVideoModal()">✨ جزئیات فیلم</button>
+            </div>
+          </div>
+          <!-- hidden fields for tests/video data -->
+          <input type="hidden" id="tests" value="0" />
+          <input type="hidden" id="testsCorrect" value="0" />
+          <input type="hidden" id="testsWrong" value="0" />
+          <input type="hidden" id="testSection" value="" />
+          <input type="hidden" id="videoFrom" value="" />
+          <input type="hidden" id="videoTo" value="" />
+          <input type="hidden" id="videoMinutes" value="0" />
+          <input type="hidden" id="videoNote" value="" />
         </div>
         <div style="margin-top:14px;">
           <label for="note">📌 یادداشت (اختیاری)</label>
@@ -1227,75 +1547,6 @@
     </div>
 
 
-
-    <!-- برنامه مشاور -->
-    <div class="card collapsible collapsed" id="consultantCard">
-      <h2 onclick="toggleCollapse('consultantCard')">📋 برنامه مشاور <span class="toggle-icon">▼</span></h2>
-      <div class="collapsible-body">
-        <p class="hint">برای هر روز، برنامهٔ هر درس تخصصی و بخش عمومی را جدا ثبت کن. تاریخ را از تقویم انتخاب کن و بعداً می‌توانی برنامهٔ روزهای قبل را ببینی.</p>
-        <div id="todayConsultantPlan" style="margin-bottom:14px;padding:12px 14px;border-radius:var(--radius-sm);border:1px solid var(--border);background:var(--accent-dim);"></div>
-        <div style="margin-bottom:12px;">
-          <label>📅 تاریخ برنامه</label>
-          <div style="display:flex;gap:8px;align-items:center;">
-            <input type="text" id="consultantDate" readonly placeholder="از تقویم انتخاب کن" style="flex:1;cursor:pointer;" onclick="openPickerCal('consultant')" />
-            <button type="button" class="btn btn-sm" onclick="openPickerCal('consultant')">📅 تقویم</button>
-          </div>
-        </div>
-        <div class="form-grid" style="margin-top:8px;">
-          <div><label>🧬 زیست</label><input type="text" id="consultant_زیست" placeholder="برنامه زیست..." /></div>
-          <div><label>⚗️ شیمی</label><input type="text" id="consultant_شیمی" placeholder="برنامه شیمی..." /></div>
-          <div><label>⚛️ فیزیک</label><input type="text" id="consultant_فیزیک" placeholder="برنامه فیزیک..." /></div>
-          <div><label>📐 ریاضی</label><input type="text" id="consultant_ریاضی" placeholder="برنامه ریاضی..." /></div>
-        </div>
-        <div style="margin-top:10px;">
-          <label>📚 عمومی (فارسی، عربی، دینی، زبان، زمین‌شناسی و ...)</label>
-          <textarea id="consultant_عمومی" rows="2" placeholder="مثلاً: فارسی آرایه + عربی درس ۳ + زمین فصل ۲" style="resize:vertical;"></textarea>
-        </div>
-        <div class="form-actions" style="margin-top:10px;">
-          <button type="button" class="btn btn-primary btn-sm" onclick="saveConsultantPlan()">💾 ذخیره برنامه این روز</button>
-          <button type="button" class="btn btn-sm" onclick="deleteConsultantPlan()">حذف این تاریخ</button>
-          <button type="button" class="btn btn-sm" onclick="viewConsultantSelected()">👁️ مشاهده این تاریخ</button>
-        </div>
-        <div id="consultantSelectedView" style="margin-top:12px;padding:12px;border-radius:var(--radius-sm);border:1px solid var(--border);display:none;"></div>
-        <div id="consultantPlanList" style="margin-top:14px;"></div>
-      </div>
-    </div>
-
-    <!-- منابع آزمون ماز -->
-    <div class="card collapsible collapsed" id="mazCard">
-      <h2 onclick="toggleCollapse('mazCard')">📝 منابع آزمون ماز (هر دو هفته) <span class="toggle-icon">▼</span></h2>
-      <div class="collapsible-body">
-        <p class="hint">منابع هر آزمون را با تاریخ ذخیره کن. بعداً می‌توانی آزمون قبلی/بعدی را ببینی و تصویر منابع بگیری.</p>
-        <div class="form-grid">
-          <div>
-            <label>📅 تاریخ آزمون</label>
-            <div style="display:flex;gap:8px;align-items:center;">
-              <input type="text" id="mazExamDate" readonly placeholder="از تقویم انتخاب کن" style="flex:1;cursor:pointer;" onclick="openPickerCal('maz')" />
-              <button type="button" class="btn btn-sm" onclick="openPickerCal('maz')">📅</button>
-            </div>
-          </div>
-          <div>
-            <label>📌 توضیح / عنوان آزمون</label>
-            <input type="text" id="mazExamNote" placeholder="مثلاً آزمون جامع نیم‌سال" />
-          </div>
-        </div>
-        <div style="margin-top:12px;">
-          <label>📚 منابع دروس تخصصی</label>
-          <div id="mazSubjects" class="form-grid" style="margin-top:8px;">
-            <div><label>زیست</label><input type="text" id="maz_زیست" placeholder="تا فصل / صفحه..." /></div>
-            <div><label>شیمی</label><input type="text" id="maz_شیمی" placeholder="تا فصل / صفحه..." /></div>
-            <div><label>فیزیک</label><input type="text" id="maz_فیزیک" placeholder="تا فصل / صفحه..." /></div>
-            <div><label>ریاضی</label><input type="text" id="maz_ریاضی" placeholder="تا فصل / صفحه..." /></div>
-            <div><label>زمین‌شناسی</label><input type="text" id="maz_زمین‌شناسی" placeholder="تا فصل / صفحه..." /></div>
-          </div>
-        </div>
-        <div class="form-actions" style="margin-top:12px;">
-          <button type="button" class="btn btn-primary btn-sm" onclick="saveMazExam()">💾 ذخیره این آزمون</button>
-          <button type="button" class="btn btn-sm" onclick="downloadMazImage()">🖼️ تصویر منابع</button>
-        </div>
-        <div id="mazExamDatesList" style="margin-top:14px;"></div>
-      </div>
-    </div>
 
     <!-- امکانات بیشتر -->
     <div class="card collapsible collapsed" id="extraCard">
@@ -1375,6 +1626,7 @@
           <button class="tab active" data-tab="daily" onclick="switchChart('daily')">📅 روزانه</button>
           <button class="tab" data-tab="weekly" onclick="switchChart('weekly')">📆 هفتگی</button>
           <button class="tab" data-tab="monthly" onclick="switchChart('monthly')">🗓️ ماهانه</button>
+          <button class="tab" data-tab="trend" onclick="switchChart('trend')">📈 روند نقطه‌ای</button>
         </div>
         <div id="chartArea" class="chart-area"></div>
         <h2 style="margin-top:28px;cursor:default;">📅 مقایسه هفته‌ها (شنبه تا جمعه)</h2>
@@ -1426,6 +1678,29 @@
       </div>
     </div>
 
+
+    <!-- میزان استفاده از گوشی -->
+    <div class="card collapsible collapsed" id="phoneCard">
+      <h2 onclick="toggleCollapse('phoneCard')">📱 میزان استفاده از گوشی <span class="toggle-icon">▼</span></h2>
+      <div class="collapsible-body">
+        <p class="hint" style="margin-bottom:12px;">هر روز چند ساعت از گوشی استفاده کردی؟</p>
+        <div class="form-grid" style="grid-template-columns:1fr 1fr auto;">
+          <div>
+            <label>ساعت</label>
+            <input type="number" id="phoneHours" min="0" max="24" placeholder="" />
+          </div>
+          <div>
+            <label>دقیقه</label>
+            <input type="number" id="phoneMinutes" min="0" max="59" placeholder="" />
+          </div>
+          <div style="display:flex;align-items:flex-end;">
+            <button type="button" class="btn btn-primary" onclick="savePhoneUsage()">ثبت امروز</button>
+          </div>
+        </div>
+        <div id="phoneTodayHint" class="hint" style="margin-top:10px;"></div>
+      </div>
+    </div>
+
     <!-- History (collapsible) -->
     <div class="card collapsible collapsed" id="historyCard">
       <h2 onclick="toggleCollapse('historyCard')">📋 تاریخچه مطالعه <span class="toggle-icon">▼</span></h2>
@@ -1456,6 +1731,7 @@
             <option value="زبان">زبان</option>
             <option value="فارسی">فارسی</option>
             <option value="عربی">عربی</option>
+            <option value="تاریخ">تاریخ</option>
           </optgroup>
         </select>
         <div style="display:flex;gap:6px;align-items:center;">
@@ -1569,10 +1845,110 @@
     </div>
   </div>
 
-  <div class="toast" id="toast"></div>
+  
+  <!-- مودال بازه زمانی مطالعه -->
+  <div id="studyTimeModal" class="modal-overlay" style="display:none;" onclick="if(event.target===this)closeStudyTimeModal()">
+    <div class="modal-box" style="max-width:400px;">
+      <h3>⏰ بازه زمانی مطالعه</h3>
+      <p class="hint" style="margin-bottom:12px;">ساعت شروع و پایان را وارد کن تا مدت مطالعه محاسبه شود.</p>
+      <div class="form-grid">
+        <div>
+          <label>از ساعت</label>
+          <div class="hm-row">
+            <input type="text" id="modalFromH" class="hm-input" inputmode="numeric" placeholder="" maxlength="2" oninput="updateModalDurationPreview()" />
+            <span class="hm-colon">:</span>
+            <input type="text" id="modalFromM" class="hm-input" inputmode="numeric" placeholder="" maxlength="2" oninput="updateModalDurationPreview()" />
+          </div>
+        </div>
+        <div>
+          <label>تا ساعت</label>
+          <div class="hm-row">
+            <input type="text" id="modalToH" class="hm-input" inputmode="numeric" placeholder="" maxlength="2" oninput="updateModalDurationPreview()" />
+            <span class="hm-colon">:</span>
+            <input type="text" id="modalToM" class="hm-input" inputmode="numeric" placeholder="" maxlength="2" oninput="updateModalDurationPreview()" />
+          </div>
+        </div>
+      </div>
+      
+      <div id="modalDurationPreview" class="modal-preview-box">—</div>
+      <div class="form-actions" style="margin-top:16px;">
+        <button type="button" class="btn btn-primary" onclick="applyStudyTime()">✅ تأیید</button>
+        <button type="button" class="btn" onclick="closeStudyTimeModal()">انصراف</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- مودال جزئیات تست -->
+  <div id="testsModal" class="modal-overlay" style="display:none;" onclick="if(event.target===this)closeTestsModal()">
+    <div class="modal-box" style="max-width:420px;">
+      <h3>📝 جزئیات تست‌ها</h3>
+      <p class="hint" style="margin-bottom:12px;">تعداد کل، درست و نادرست و منبع تست را وارد کن.</p>
+      <div class="form-grid">
+        <div>
+          <label>تعداد کل تست</label>
+          <input type="number" id="modalTestsTotal" min="0" max="9999" placeholder="۰" oninput="syncTestsCorrectWrong()" />
+        </div>
+        <div>
+          <label>تعداد درست</label>
+          <input type="number" id="modalTestsCorrect" min="0" max="9999" placeholder="۰" oninput="syncTestsFromCorrect()" />
+        </div>
+        <div>
+          <label>تعداد نادرست</label>
+          <input type="number" id="modalTestsWrong" min="0" max="9999" placeholder="۰" oninput="syncTestsFromWrong()" />
+        </div>
+        <div style="grid-column:1/-1;">
+          <label>تست‌های زده‌شده از کجا؟</label>
+          <input type="text" id="modalTestSection" placeholder="مثلاً فصل ۳ — گردش مواد / آزمون ماز" />
+        </div>
+      </div>
+      <div id="modalTestsPreview" class="modal-preview-box" style="font-size:0.92rem;font-weight:500;"></div>
+      <div class="form-actions" style="margin-top:16px;">
+        <button type="button" class="btn btn-primary" onclick="applyTestsDetail()">✅ تأیید</button>
+        <button type="button" class="btn" onclick="closeTestsModal()">انصراف</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- مودال جزئیات فیلم آموزشی -->
+  <div id="videoModal" class="modal-overlay" style="display:none;" onclick="if(event.target===this)closeVideoModal()">
+    <div class="modal-box" style="max-width:420px;">
+      <h3>🎬 جزئیات فیلم آموزشی</h3>
+      <p class="hint" style="margin-bottom:12px;">از ساعت چند تا چند فیلم دیدی؟</p>
+      <div class="form-grid">
+        <div>
+          <label>از ساعت</label>
+          <div class="hm-row">
+            <input type="text" id="modalVideoFromH" class="hm-input" inputmode="numeric" placeholder="" maxlength="2" oninput="updateVideoDurationPreview()" />
+            <span class="hm-colon">:</span>
+            <input type="text" id="modalVideoFromM" class="hm-input" inputmode="numeric" placeholder="" maxlength="2" oninput="updateVideoDurationPreview()" />
+          </div>
+        </div>
+        <div>
+          <label>تا ساعت</label>
+          <div class="hm-row">
+            <input type="text" id="modalVideoToH" class="hm-input" inputmode="numeric" placeholder="" maxlength="2" oninput="updateVideoDurationPreview()" />
+            <span class="hm-colon">:</span>
+            <input type="text" id="modalVideoToM" class="hm-input" inputmode="numeric" placeholder="" maxlength="2" oninput="updateVideoDurationPreview()" />
+          </div>
+        </div>
+        <div style="grid-column:1/-1;">
+          <label>توضیحات / مبحث</label>
+          <input type="text" id="modalVideoNote" placeholder="مثلاً فصل ۲ زیست — گردش مواد" />
+        </div>
+      </div>
+      
+      <div id="modalVideoDurationPreview" class="modal-preview-box">—</div>
+      <div class="form-actions" style="margin-top:16px;">
+        <button type="button" class="btn btn-primary" onclick="applyVideoDetail()">✅ تأیید</button>
+        <button type="button" class="btn" onclick="closeVideoModal()">انصراف</button>
+      </div>
+    </div>
+  </div>
+
+<div class="toast" id="toast"></div>
   <script>
     const SPECIALIZED = ['زیست', 'شیمی', 'فیزیک', 'ریاضی', 'زمین‌شناسی'];
-    const ALL_SUBJECTS = ['زیست', 'شیمی', 'فیزیک', 'ریاضی', 'زمین‌شناسی', 'دینی', 'زبان', 'فارسی', 'عربی'];
+    const ALL_SUBJECTS = ['زیست', 'شیمی', 'فیزیک', 'ریاضی', 'زمین‌شناسی', 'دینی', 'زبان', 'فارسی', 'عربی', 'تاریخ'];
     const WEEKDAYS_FA = ['یکشنبه', 'دوشنبه', 'سه‌شنبه', 'چهارشنبه', 'پنج‌شنبه', 'جمعه', 'شنبه'];
     const STORAGE_KEY = 'studyTracker_v2';
     const START_DAY = 21;
@@ -1644,6 +2020,334 @@
       if (m === 0) return toPersian(h) + ' ساعت';
       return toPersian(h) + ' ساعت و ' + toPersian(m) + ' دقیقه';
     }
+    
+    // ===== بازه زمانی / تست / فیلم =====
+    function pad2(n) {
+      n = parseInt(n, 10);
+      if (isNaN(n)) n = 0;
+      return (n < 10 ? '0' : '') + n;
+    }
+    function ensureTimeSelectsFilled() {
+      var ids = ['modalFromH','modalToH','modalVideoFromH','modalVideoToH'];
+      var mids = ['modalFromM','modalToM','modalVideoFromM','modalVideoToM'];
+      ids.forEach(function(id) {
+        var el = document.getElementById(id);
+        if (!el || el.options.length) return;
+        for (var h = 0; h < 24; h++) {
+          var o = document.createElement('option');
+          o.value = pad2(h);
+          o.textContent = toPersian(pad2(h));
+          el.appendChild(o);
+        }
+      });
+      mids.forEach(function(id) {
+        var el = document.getElementById(id);
+        if (!el || el.options.length) return;
+        for (var m = 0; m < 60; m++) {
+          var o = document.createElement('option');
+          o.value = pad2(m);
+          o.textContent = toPersian(pad2(m));
+          el.appendChild(o);
+        }
+      });
+    }
+    function digitsOnlyTime(str) {
+      return String(str || '').replace(/[۰-۹]/g, function(d){ return String('۰۱۲۳۴۵۶۷۸۹'.indexOf(d)); })
+        .replace(/[٠-٩]/g, function(d){ return String('٠١٢٣٤٥٦٧٨٩'.indexOf(d)); })
+        .replace(/[^\d:]/g, '');
+    }
+    function pad2(n) {
+      n = parseInt(n, 10);
+      if (isNaN(n)) n = 0;
+      return (n < 10 ? '0' : '') + n;
+    }
+    function parseTimeToMinutes(t) {
+      if (t == null || t === '') return null;
+      t = String(t).trim()
+        .replace(/[۰-۹]/g, function(d){ return String('۰۱۲۳۴۵۶۷۸۹'.indexOf(d)); })
+        .replace(/[٠-٩]/g, function(d){ return String('٠١٢٣٤٥٦٧٨٩'.indexOf(d)); })
+        .replace(/[^\d:]/g, '');
+      if (!t) return null;
+      var h, m;
+      if (t.indexOf(':') >= 0) {
+        var p = t.split(':');
+        h = parseInt(p[0], 10);
+        m = parseInt(p[1] || '0', 10);
+      } else if (t.length <= 2) {
+        h = parseInt(t, 10);
+        m = 0;
+      } else if (t.length === 3) {
+        h = parseInt(t[0], 10);
+        m = parseInt(t.slice(1), 10);
+      } else {
+        h = parseInt(t.slice(0, 2), 10);
+        m = parseInt(t.slice(2, 4), 10);
+      }
+      if (isNaN(h)) return null;
+      if (isNaN(m)) m = 0;
+      h = Math.max(0, Math.min(23, h));
+      m = Math.max(0, Math.min(59, m));
+      return h * 60 + m;
+    }
+    function calcDurationMinutes(from, to) {
+      var a = parseTimeToMinutes(from), b = parseTimeToMinutes(to);
+      if (a == null || b == null) return 0;
+      var d = b - a;
+      if (d < 0) d += 24 * 60;
+      return d;
+    }
+    function formatTimeFa(t) {
+      if (!t && t !== 0) return '—';
+      var mins = parseTimeToMinutes(t);
+      if (mins == null) return toPersian(String(t));
+      return toPersian(pad2(Math.floor(mins / 60))) + ':' + toPersian(pad2(mins % 60));
+    }
+    function timeStrFromHM(h, m) {
+      return pad2(h) + ':' + pad2(m);
+    }
+    function readHM(hId, mId) {
+      var hEl = document.getElementById(hId);
+      var mEl = document.getElementById(mId);
+      var hs = hEl ? String(hEl.value || '').trim() : '';
+      var ms = mEl ? String(mEl.value || '').trim() : '';
+      if (hs === '') return '';
+      var h = parseInt(String(hs).replace(/[۰-۹]/g, function(d){ return String('۰۱۲۳۴۵۶۷۸۹'.indexOf(d)); }), 10);
+      var m = ms === '' ? 0 : parseInt(String(ms).replace(/[۰-۹]/g, function(d){ return String('۰۱۲۳۴۵۶۷۸۹'.indexOf(d)); }), 10);
+      if (isNaN(h)) return '';
+      if (isNaN(m)) m = 0;
+      h = Math.max(0, Math.min(23, h));
+      m = Math.max(0, Math.min(59, m));
+      return pad2(h) + ':' + pad2(m);
+    }
+    function setHM(hId, mId, t) {
+      var hEl = document.getElementById(hId);
+      var mEl = document.getElementById(mId);
+      if (!hEl || !mEl) return;
+      if (!t) { hEl.value = ''; mEl.value = ''; return; }
+      var mins = parseTimeToMinutes(t);
+      if (mins == null) { hEl.value = ''; mEl.value = ''; return; }
+      hEl.value = String(Math.floor(mins / 60));
+      mEl.value = String(mins % 60);
+    }
+    function clearHM(hId, mId) {
+      var hEl = document.getElementById(hId);
+      var mEl = document.getElementById(mId);
+      if (hEl) hEl.value = '';
+      if (mEl) mEl.value = '';
+    }
+    function openStudyTimeModal() {
+      var f = document.getElementById('timeFrom').value || '';
+      var t = document.getElementById('timeTo').value || '';
+      if (f) setHM('modalFromH', 'modalFromM', f); else clearHM('modalFromH', 'modalFromM');
+      if (t) setHM('modalToH', 'modalToM', t); else clearHM('modalToH', 'modalToM');
+      updateModalDurationPreview();
+      var ov = document.getElementById('studyTimeModal');
+      if (ov) ov.style.display = 'flex';
+      setTimeout(function(){ var el = document.getElementById('modalFromH'); if (el) el.focus(); }, 40);
+    }
+    function closeStudyTimeModal() {
+      var ov = document.getElementById('studyTimeModal');
+      if (ov) ov.style.display = 'none';
+    }
+    function updateModalDurationPreview() {
+      var f = readHM('modalFromH', 'modalFromM');
+      var t = readHM('modalToH', 'modalToM');
+      var el = document.getElementById('modalDurationPreview');
+      if (!el) return;
+      if (!f || !t) { el.textContent = '—'; return; }
+      var mins = calcDurationMinutes(f, t);
+      el.textContent = mins > 0 ? ('مدت: ' + formatDuration(mins)) : (mins === 0 ? 'شروع و پایان یکسان است' : 'بازه نامعتبر');
+    }
+    function applyStudyTime() {
+      var f = readHM('modalFromH', 'modalFromM');
+      var t = readHM('modalToH', 'modalToM');
+      if (!f || !t) { showToast('ساعت شروع و پایان را بنویس', true); return; }
+      var mins = calcDurationMinutes(f, t);
+      if (mins <= 0) { showToast('بازه نامعتبر است — پایان باید بعد از شروع باشد', true); return; }
+      document.getElementById('timeFrom').value = f;
+      document.getElementById('timeTo').value = t;
+      document.getElementById('studyMinutes').value = String(mins);
+      var disp = document.getElementById('studyTimeDisplay');
+      if (disp) disp.value = formatTimeFa(f) + ' تا ' + formatTimeFa(t);
+      var hint = document.getElementById('studyDurationHint');
+      if (hint) hint.textContent = formatDuration(mins);
+      closeStudyTimeModal();
+      showToast('بازه مطالعه: ' + formatDuration(mins));
+    }
+
+    function onTestsToggle() {
+      var on = document.getElementById('testsEnabled') && document.getElementById('testsEnabled').checked;
+      var btn = document.getElementById('testsDetailBtn');
+      var sum = document.getElementById('testsSummary');
+      var chip = document.getElementById('testsChip');
+      if (chip) chip.classList.toggle('active', !!on);
+      if (btn) btn.style.display = on ? '' : 'none';
+      if (sum) sum.style.display = on ? '' : 'none';
+      if (on) openTestsModal();
+      else {
+        document.getElementById('tests').value = '0';
+        document.getElementById('testsCorrect').value = '0';
+        document.getElementById('testsWrong').value = '0';
+        document.getElementById('testSection').value = '';
+        if (sum) sum.textContent = '';
+      }
+    }
+    function openTestsModal() {
+      var total = document.getElementById('tests').value || '0';
+      var cor = document.getElementById('testsCorrect').value || '0';
+      var wr = document.getElementById('testsWrong').value || '0';
+      var sec = document.getElementById('testSection').value || '';
+      document.getElementById('modalTestsTotal').value = total === '0' ? '' : total;
+      document.getElementById('modalTestsCorrect').value = cor === '0' ? '' : cor;
+      document.getElementById('modalTestsWrong').value = wr === '0' ? '' : wr;
+      document.getElementById('modalTestSection').value = sec;
+      updateTestsPreview();
+      var ov = document.getElementById('testsModal');
+      if (ov) ov.style.display = 'flex';
+    }
+    function closeTestsModal() {
+      var ov = document.getElementById('testsModal');
+      if (ov) ov.style.display = 'none';
+    }
+    function syncTestsCorrectWrong() {
+      var total = parseInt(document.getElementById('modalTestsTotal').value) || 0;
+      var cor = parseInt(document.getElementById('modalTestsCorrect').value) || 0;
+      if (cor > total) document.getElementById('modalTestsCorrect').value = total;
+      var wrong = Math.max(0, total - (parseInt(document.getElementById('modalTestsCorrect').value) || 0));
+      document.getElementById('modalTestsWrong').value = wrong || '';
+      updateTestsPreview();
+    }
+    function syncTestsFromCorrect() {
+      var total = parseInt(document.getElementById('modalTestsTotal').value) || 0;
+      var cor = parseInt(document.getElementById('modalTestsCorrect').value) || 0;
+      if (total && cor > total) {
+        document.getElementById('modalTestsTotal').value = cor;
+        total = cor;
+      }
+      if (total) document.getElementById('modalTestsWrong').value = Math.max(0, total - cor) || '';
+      updateTestsPreview();
+    }
+    function syncTestsFromWrong() {
+      var total = parseInt(document.getElementById('modalTestsTotal').value) || 0;
+      var wr = parseInt(document.getElementById('modalTestsWrong').value) || 0;
+      if (total && wr > total) {
+        document.getElementById('modalTestsTotal').value = wr;
+        total = wr;
+      }
+      if (total) document.getElementById('modalTestsCorrect').value = Math.max(0, total - wr) || '';
+      updateTestsPreview();
+    }
+    function updateTestsPreview() {
+      var total = parseInt(document.getElementById('modalTestsTotal').value) || 0;
+      var cor = parseInt(document.getElementById('modalTestsCorrect').value) || 0;
+      var wr = parseInt(document.getElementById('modalTestsWrong').value) || 0;
+      var sec = (document.getElementById('modalTestSection').value || '').trim();
+      var el = document.getElementById('modalTestsPreview');
+      if (!el) return;
+      if (!total) { el.textContent = 'تعداد تست را وارد کن'; return; }
+      var pct = total ? Math.round(cor / total * 100) : 0;
+      el.innerHTML = toPersian(total) + ' تست · ✅ ' + toPersian(cor) + ' درست · ❌ ' + toPersian(wr) + ' نادرست · ' + toPersian(pct) + '٪' +
+        (sec ? '<br><span style="color:var(--text-muted);font-size:0.85rem;">📌 ' + escapeHtml(sec) + '</span>' : '');
+    }
+    function applyTestsDetail() {
+      var total = parseInt(document.getElementById('modalTestsTotal').value) || 0;
+      var cor = parseInt(document.getElementById('modalTestsCorrect').value) || 0;
+      var wr = parseInt(document.getElementById('modalTestsWrong').value) || 0;
+      var sec = (document.getElementById('modalTestSection').value || '').trim();
+      if (total <= 0) { showToast('حداقل تعداد تست را وارد کن', true); return; }
+      if (cor + wr !== total && (cor || wr)) {
+        // auto-fix total if mismatch
+        if (!total) total = cor + wr;
+        else if (cor + wr < total) wr = total - cor;
+      }
+      document.getElementById('tests').value = String(total);
+      document.getElementById('testsCorrect').value = String(cor);
+      document.getElementById('testsWrong').value = String(wr);
+      document.getElementById('testSection').value = sec;
+      var cb = document.getElementById('testsEnabled');
+      if (cb) cb.checked = true;
+      var chip = document.getElementById('testsChip');
+      if (chip) chip.classList.add('active');
+      var btn = document.getElementById('testsDetailBtn');
+      if (btn) btn.style.display = '';
+      var sum = document.getElementById('testsSummary');
+      if (sum) {
+        sum.style.display = '';
+        sum.textContent = toPersian(total) + ' تست (✅' + toPersian(cor) + ' / ❌' + toPersian(wr) + ')' + (sec ? ' — ' + sec : '');
+      }
+      closeTestsModal();
+      showToast('جزئیات تست ذخیره شد');
+    }
+
+    function onVideoToggle() {
+      var on = document.getElementById('videoEnabled') && document.getElementById('videoEnabled').checked;
+      var btn = document.getElementById('videoDetailBtn');
+      var sum = document.getElementById('videoSummary');
+      var chip = document.getElementById('videoChip');
+      if (chip) chip.classList.toggle('active', !!on);
+      if (btn) btn.style.display = on ? '' : 'none';
+      if (sum) sum.style.display = on ? '' : 'none';
+      if (on) openVideoModal();
+      else {
+        document.getElementById('videoFrom').value = '';
+        document.getElementById('videoTo').value = '';
+        document.getElementById('videoMinutes').value = '0';
+        document.getElementById('videoNote').value = '';
+        if (sum) sum.textContent = '';
+      }
+    }
+    function openVideoModal() {
+      var f = document.getElementById('videoFrom').value || '';
+      var t = document.getElementById('videoTo').value || '';
+      if (f) setHM('modalVideoFromH', 'modalVideoFromM', f); else clearHM('modalVideoFromH', 'modalVideoFromM');
+      if (t) setHM('modalVideoToH', 'modalVideoToM', t); else clearHM('modalVideoToH', 'modalVideoToM');
+      var noteEl = document.getElementById('modalVideoNote');
+      if (noteEl) noteEl.value = document.getElementById('videoNote').value || '';
+      updateVideoDurationPreview();
+      var ov = document.getElementById('videoModal');
+      if (ov) ov.style.display = 'flex';
+      setTimeout(function(){ var el = document.getElementById('modalVideoFromH'); if (el) el.focus(); }, 40);
+    }
+    function closeVideoModal() {
+      var ov = document.getElementById('videoModal');
+      if (ov) ov.style.display = 'none';
+    }
+    function updateVideoDurationPreview() {
+      var f = readHM('modalVideoFromH', 'modalVideoFromM');
+      var t = readHM('modalVideoToH', 'modalVideoToM');
+      var el = document.getElementById('modalVideoDurationPreview');
+      if (!el) return;
+      if (!f || !t) { el.textContent = '—'; return; }
+      var mins = calcDurationMinutes(f, t);
+      el.textContent = mins > 0 ? ('مدت فیلم: ' + formatDuration(mins)) : (mins === 0 ? 'شروع و پایان یکسان است' : 'بازه نامعتبر');
+    }
+    function applyVideoDetail() {
+      var f = readHM('modalVideoFromH', 'modalVideoFromM');
+      var t = readHM('modalVideoToH', 'modalVideoToM');
+      var note = (document.getElementById('modalVideoNote') || {}).value || '';
+      if (!f || !t) { showToast('ساعت شروع و پایان فیلم را بنویس', true); return; }
+      var mins = calcDurationMinutes(f, t);
+      if (mins <= 0) { showToast('بازه نامعتبر است — پایان باید بعد از شروع باشد', true); return; }
+      document.getElementById('videoFrom').value = f;
+      document.getElementById('videoTo').value = t;
+      document.getElementById('videoMinutes').value = String(mins);
+      document.getElementById('videoNote').value = note.trim();
+      var cb = document.getElementById('videoEnabled');
+      if (cb) cb.checked = true;
+      var chip = document.getElementById('videoChip');
+      if (chip) chip.classList.add('active');
+      var btn = document.getElementById('videoDetailBtn');
+      if (btn) btn.style.display = '';
+      var sum = document.getElementById('videoSummary');
+      if (sum) {
+        sum.style.display = '';
+        sum.textContent = formatDuration(mins) + (note.trim() ? ' — ' + note.trim() : '');
+      }
+      closeVideoModal();
+      showToast('جزئیات فیلم ذخیره شد');
+    }
+
+
     function getWeekdayFa(date) {
       return WEEKDAYS_FA[date.getDay()];
     }
@@ -1728,8 +2432,8 @@
         { emoji: '😄', color: '#22c55e', label: 'خیلی خوب' },
         { emoji: '🔥', color: '#22c55e', label: 'عالی' },
         { emoji: '💪', color: '#34d399', label: 'فوق‌العاده' },
-        { emoji: '🌟', color: '#38bdf8', label: 'درخشان' },
-        { emoji: '🏆', color: '#a78bfa', label: 'قهرمانانه' }
+        { emoji: '🌟', color: '#d0c4b0', label: 'درخشان' },
+        { emoji: '🏆', color: '#c4b5a0', label: 'قهرمانانه' }
       ];
       const info = table[score] || table[0];
       return { score: score, emoji: info.emoji, color: info.color, label: info.label };
@@ -1778,6 +2482,15 @@
     function startSessionTimer() { /* غیرفعال */ }
     function updateSessionHint() { /* غیرفعال */ }
 
+    
+    function renderConsultantPlans() {}
+    function renderTodayPlanBanner() {}
+    function renderMazData() {}
+    function saveConsultantItem() {}
+    function saveMazExam() {}
+    function downloadMazImage() {}
+    function toggleVideoHours() {}
+
     function tryLogin() { showApp(); }
     function logout() { /* حذف شده */ }
     function setTheme(next) {
@@ -1815,6 +2528,7 @@
       loadData();
       loadSyncSettings();
       updateAll();
+      try { updatePhoneHint(); } catch (e) {}
       startSessionTimer();
       // refresh session on any interaction
       document.getElementById('app').addEventListener('click', refreshSession, { passive: true });
@@ -1891,57 +2605,73 @@
       refreshSession();
       const subject = document.getElementById('subject').value;
       const dateStr = getSelectedDateStr();
-      const hours = parseInt(document.getElementById('hours').value) || 0;
-      const minutes = parseInt(document.getElementById('minutes').value) || 0;
-      const tests = parseInt(document.getElementById('tests').value) || 0;
-      const videoWatched = document.getElementById('videoWatched').value === 'yes';
-      const videoH = parseInt(document.getElementById('videoHours').value) || 0;
-      const videoM = parseInt((document.getElementById('videoMinutes') || {}).value) || 0;
-      const videoHours = videoWatched ? (videoH + videoM / 60) : 0;
+      const totalMin = parseInt(document.getElementById('studyMinutes').value) || 0;
+      const timeFrom = (document.getElementById('timeFrom') || {}).value || '';
+      const timeTo = (document.getElementById('timeTo') || {}).value || '';
+      const testsEnabled = !!(document.getElementById('testsEnabled') && document.getElementById('testsEnabled').checked);
+      const tests = testsEnabled ? (parseInt(document.getElementById('tests').value) || 0) : 0;
+      const testsCorrect = testsEnabled ? (parseInt(document.getElementById('testsCorrect').value) || 0) : 0;
+      const testsWrong = testsEnabled ? (parseInt(document.getElementById('testsWrong').value) || 0) : 0;
+      const testSection = testsEnabled ? ((document.getElementById('testSection') || {}).value || '').trim() : '';
+      const videoEnabled = !!(document.getElementById('videoEnabled') && document.getElementById('videoEnabled').checked);
+      const videoMin = videoEnabled ? (parseInt(document.getElementById('videoMinutes').value) || 0) : 0;
+      const videoFrom = videoEnabled ? ((document.getElementById('videoFrom') || {}).value || '') : '';
+      const videoTo = videoEnabled ? ((document.getElementById('videoTo') || {}).value || '') : '';
+      const videoNote = videoEnabled ? ((document.getElementById('videoNote') || {}).value || '').trim() : '';
       const descriptive = !!(document.getElementById('descriptiveStudy') && document.getElementById('descriptiveStudy').checked);
-      const testSection = (document.getElementById('testSection') && document.getElementById('testSection').value || '').trim();
       const note = document.getElementById('note').value.trim();
-      const totalMin = hours * 60 + minutes;
       if (!subject) { showToast('لطفاً درس را انتخاب کنید', true); return; }
-      if (totalMin <= 0 && tests <= 0 && !(videoWatched && videoHours > 0) && !descriptive) {
-        showToast('حداقل زمان مطالعه، تست، فیلم یا تشریحی را وارد کنید', true); return;
+      if (totalMin <= 0 && tests <= 0 && !(videoEnabled && videoMin > 0) && !descriptive) {
+        showToast('حداقل بازه مطالعه، تست، فیلم یا تشریحی را مشخص کنید', true); return;
       }
       if (!parseJalali(dateStr)) { showToast('تاریخ معتبر نیست', true); return; }
-      const parts = dateStr.split('/');
       const nowIso = new Date().toISOString();
       sessions.unshift({
         id: Date.now() + Math.random(),
         subject: subject,
         minutes: totalMin,
         tests: tests,
+        testsCorrect: testsCorrect,
+        testsWrong: testsWrong,
         testSection: testSection,
-        videoWatched: videoWatched,
-        videoHours: videoWatched ? videoHours : 0,
+        videoWatched: videoEnabled && videoMin > 0,
+        videoHours: videoEnabled ? (videoMin / 60) : 0,
+        videoMinutes: videoEnabled ? videoMin : 0,
+        videoFrom: videoFrom,
+        videoTo: videoTo,
+        videoNote: videoNote,
         descriptive: descriptive,
         date: dateStr,
         dateKey: jalaliToKey(dateStr),
         note: note,
+        timeFrom: timeFrom,
+        timeTo: timeTo,
         createdAt: nowIso,
         updatedAt: nowIso,
         deleted: false
       });
       saveData();
       document.getElementById('addForm').reset();
-      // بعد از ثبت، تاریخ دوباره روی امروز برمی‌گردد
       (function() {
         var now = new Date();
         var j = gregorianToJalali(now.getFullYear(), now.getMonth() + 1, now.getDate());
         setSessionDateFields(j[0], j[1], j[2]);
       })();
-      document.getElementById('hours').value = '';
-      document.getElementById('minutes').value = '';
-      document.getElementById('tests').value = '';
-      document.getElementById('videoWatched').value = 'no';
-      document.getElementById('videoHours').value = '';
-      const vm = document.getElementById('videoMinutes'); if (vm) vm.value = '';
-      const ds = document.getElementById('descriptiveStudy'); if (ds) ds.checked = false;
-      const ts = document.getElementById('testSection'); if (ts) ts.value = '';
-      toggleVideoHours();
+      // clear custom fields
+      ['timeFrom','timeTo','studyMinutes','tests','testsCorrect','testsWrong','testSection','videoFrom','videoTo','videoMinutes','videoNote'].forEach(function(id) {
+        var el = document.getElementById(id);
+        if (el) el.value = (id === 'studyMinutes' || id === 'videoMinutes' || id.indexOf('tests') === 0) ? '0' : '';
+      });
+      var std = document.getElementById('studyTimeDisplay'); if (std) std.value = '';
+      var sdh = document.getElementById('studyDurationHint'); if (sdh) sdh.textContent = '—';
+      var te = document.getElementById('testsEnabled'); if (te) te.checked = false;
+      var ve = document.getElementById('videoEnabled'); if (ve) ve.checked = false;
+      var ds = document.getElementById('descriptiveStudy'); if (ds) ds.checked = false;
+      ['testsChip','videoChip','descChip'].forEach(function(id){ var c=document.getElementById(id); if(c) c.classList.remove('active'); });
+      var tsum = document.getElementById('testsSummary'); if (tsum) { tsum.style.display = 'none'; tsum.textContent = ''; }
+      var vsum = document.getElementById('videoSummary'); if (vsum) { vsum.style.display = 'none'; vsum.textContent = ''; }
+      var tbtn = document.getElementById('testsDetailBtn'); if (tbtn) tbtn.style.display = 'none';
+      var vbtn = document.getElementById('videoDetailBtn'); if (vbtn) vbtn.style.display = 'none';
       updateWeekday();
       updateAll();
       showToast('جلسه «' + subject + '» ثبت شد ✓');
@@ -2023,9 +2753,7 @@
     }
     function updateAll() {
       updateStats(); renderChart(); renderWeekCompare(); renderHistory(); renderExtras();
-      try { renderConsultantPlans(); } catch(e) {}
-      try { renderMazData(); } catch(e) {}
-      try { renderTodayPlanBanner(); } catch(e) {}
+      /* consultant & maz removed */
     }
     function updateStats() {
       const todayKey = jalaliToKey(toJalaliStr());
@@ -2102,7 +2830,96 @@
       const area = document.getElementById('chartArea');
       if (currentChart === 'daily') renderDailyChart(area);
       else if (currentChart === 'weekly') renderWeeklyChart(area);
+      else if (currentChart === 'trend') renderTrendLineChart(area);
       else renderMonthlyChart(area);
+    }
+    function renderTrendLineChart(area) {
+      const days = [];
+      let maxMin = 1;
+      for (let i = 13; i >= 0; i--) {
+        const key = jalaliToKey(daysAgoJalali(i));
+        const mins = getMinutesForDate(key);
+        const tests = getTestsForDate(key);
+        if (mins > maxMin) maxMin = mins;
+        let weekday = '';
+        try {
+          const d = parseJalali(key);
+          if (d) weekday = getWeekdayFa(d);
+        } catch(e) {}
+        days.push({ key: key, mins: mins, tests: tests, weekday: weekday, isToday: i === 0 });
+      }
+      if (maxMin < 1) maxMin = 1;
+      const W = 560, H = 180, padL = 36, padR = 12, padT = 16, padB = 8;
+      const plotW = W - padL - padR, plotH = H - padT - padB;
+      const pts = days.map(function(d, i) {
+        const x = padL + (days.length === 1 ? plotW/2 : (i / (days.length - 1)) * plotW);
+        const y = padT + plotH - (d.mins / maxMin) * plotH;
+        return { x: x, y: y, d: d };
+      });
+      // smooth-ish polyline
+      let pathD = '';
+      pts.forEach(function(p, i) {
+        pathD += (i === 0 ? 'M' : 'L') + p.x.toFixed(1) + ',' + p.y.toFixed(1) + ' ';
+      });
+      // area under line
+      const areaD = pathD + 'L' + pts[pts.length-1].x.toFixed(1) + ',' + (padT+plotH) +
+        ' L' + pts[0].x.toFixed(1) + ',' + (padT+plotH) + ' Z';
+      // grid lines
+      let grid = '';
+      for (let g = 0; g <= 3; g++) {
+        const gy = padT + (g/3) * plotH;
+        grid += '<line x1="'+padL+'" y1="'+gy+'" x2="'+(W-padR)+'" y2="'+gy+'" />';
+      }
+      const dots = pts.map(function(p, i) {
+        const tip = formatDuration(p.d.mins) + (p.d.tests ? ' · 📝 '+toPersian(p.d.tests) : '');
+        return '<circle class="line-chart-dot" cx="'+p.x.toFixed(1)+'" cy="'+p.y.toFixed(1)+'" r="'+(p.d.isToday?5.5:4)+'" ' +
+          'data-tip="'+tip.replace(/"/g,'&quot;')+'" data-label="'+toPersian(p.d.key)+'" ' +
+          'onmouseenter="showLineTip(evt,this)" onmouseleave="hideLineTip()" />';
+      }).join('');
+      const labels = days.map(function(d) {
+        const short = d.key.split('/').slice(1).join('/'); // mm/dd
+        return '<span title="'+toPersian(d.key)+'">'+(d.isToday?'امروز':toPersian(short))+'</span>';
+      }).join('');
+      area.innerHTML =
+        '<div class="chart-title">روند مطالعه — ۱۴ روز اخیر</div>' +
+        '<div class="line-chart-wrap" id="lineChartWrap">' +
+          '<div class="line-chart-tooltip" id="lineChartTip"></div>' +
+          '<svg class="line-chart-svg" viewBox="0 0 '+W+' '+H+'" preserveAspectRatio="none">' +
+            '<defs>' +
+              '<linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">' +
+                '<stop offset="0%" stop-color="#d8ccb8"/>' +
+                '<stop offset="50%" stop-color="#c4b5a0"/>' +
+                '<stop offset="100%" stop-color="#b8a990"/>' +
+              '</linearGradient>' +
+              '<linearGradient id="lineAreaGrad" x1="0%" y1="0%" x2="0%" y2="100%">' +
+                '<stop offset="0%" stop-color="rgba(196,181,160,0.35)"/>' +
+                '<stop offset="100%" stop-color="rgba(196,181,160,0)"/>' +
+              '</linearGradient>' +
+            '</defs>' +
+            '<g class="line-chart-grid">'+grid+'</g>' +
+            '<path class="line-chart-area" d="'+areaD+'" />' +
+            '<path class="line-chart-path" d="'+pathD+'" />' +
+            dots +
+          '</svg>' +
+          '<div class="line-chart-labels">'+labels+'</div>' +
+        '</div>' +
+        '<div style="margin-top:10px;font-size:0.82rem;color:var(--text-muted);text-align:center;">روی هر نقطه برو تا جزئیات همان روز را ببینی</div>';
+    }
+    function showLineTip(evt, el) {
+      const tip = document.getElementById('lineChartTip');
+      const wrap = document.getElementById('lineChartWrap');
+      if (!tip || !wrap) return;
+      tip.innerHTML = '<strong>'+el.getAttribute('data-label')+'</strong><br>'+el.getAttribute('data-tip');
+      tip.classList.add('show');
+      const rect = wrap.getBoundingClientRect();
+      const x = evt.clientX - rect.left;
+      const y = evt.clientY - rect.top;
+      tip.style.left = Math.min(rect.width - 120, Math.max(8, x + 10)) + 'px';
+      tip.style.top = Math.max(8, y - 48) + 'px';
+    }
+    function hideLineTip() {
+      const tip = document.getElementById('lineChartTip');
+      if (tip) tip.classList.remove('show');
     }
     function renderDailyChart(area) {
       const todayKey = jalaliToKey(toJalaliStr());
@@ -2425,19 +3242,26 @@
           const badge = isSpecialized(s.subject)
             ? '<span class="badge badge-spec">تخصصی</span>'
             : '<span class="badge badge-gen">عمومی</span>';
-          let testsInfo = (s.tests || 0) > 0 ? '<span class="tests-badge" style="background:rgba(244,114,182,0.18);color:#f472b6;border:1px solid #f472b6;">📝 ' + toPersian(s.tests) + ' تست</span>' : '';
+          let testsInfo = '';
+          if ((s.tests || 0) > 0) {
+            let tLabel = '📝 ' + toPersian(s.tests) + ' تست';
+            if (s.testsCorrect != null || s.testsWrong != null) {
+              tLabel += ' (✅' + toPersian(s.testsCorrect||0) + '/❌' + toPersian(s.testsWrong||0) + ')';
+            }
+            testsInfo += '<span class="tests-badge" style="background:rgba(244,114,182,0.18);color:#f472b6;border:1px solid #f472b6;">' + tLabel + '</span>';
+          }
           if (s.videoWatched) {
-            const vh = s.videoHours || 0;
-            const vH = Math.floor(vh); const vM = Math.round((vh - vH) * 60);
+            const vMin = s.videoMinutes || Math.round((s.videoHours || 0) * 60);
             let vLabel = 'فیلم';
-            if (vH || vM) vLabel = (vH ? toPersian(vH) + 'س' : '') + (vM ? toPersian(vM) + 'د' : '');
+            if (vMin > 0) vLabel = formatDuration(vMin);
+            if (s.videoFrom && s.videoTo) vLabel = toPersian(s.videoFrom) + '–' + toPersian(s.videoTo);
             testsInfo += ' <span class="tests-badge" style="background:rgba(168,85,247,0.2);color:#c084fc;border:1px solid #c084fc;">🎬 ' + vLabel + '</span>';
           }
           if (s.descriptive) testsInfo += ' <span class="tests-badge" style="background:rgba(249,115,22,0.2);color:#fb923c;border:1px solid #fb923c;">📄 تشریحی</span>';
           let metaLines = '';
-          if (s.timeFrom && s.timeTo) metaLines += '<div class="session-meta">⏰ ' + toPersian(s.timeFrom) + ' تا ' + toPersian(s.timeTo) + '</div>';
+          if (s.timeFrom && s.timeTo) metaLines += '<div class="session-meta">📚 ' + toPersian(s.timeFrom) + ' تا ' + toPersian(s.timeTo) + '</div>';
           if (s.note) metaLines += '<div class="session-meta">' + escapeHtml(s.note) + '</div>';
-          if (s.testSection) metaLines += '<div class="session-meta" style="margin-top:2px;">📝 تست‌های زده‌شده: ' + escapeHtml(s.testSection) + '</div>';
+          if (s.testSection) metaLines += '<div class="session-meta" style="margin-top:2px;">📝 منبع تست: ' + escapeHtml(s.testSection) + '</div>';
           return '<div class="session-item"><div class="session-info"><div class="session-subject">' + badge + escapeHtml(s.subject) + ' ' + testsInfo + '</div>' + metaLines + '</div><div class="session-duration">' + formatDuration(s.minutes) + '</div><button class="edit-btn" onclick="openEditSession(' + s.id + ')" title="ویرایش">✏️</button><button class="session-delete" onclick="deleteSession(' + s.id + ')" title="حذف">×</button></div>';
         }).join('');
         const safeKey = key.replace(/'/g, "\\'");
@@ -2449,6 +3273,49 @@
     }
 
     // ===== دانلود تصویر خلاصه روز =====
+
+    // ===== میزان استفاده از گوشی =====
+    var PHONE_KEY = 'studyTracker_phoneUsage_v1';
+    function loadPhoneUsage() {
+      try { return JSON.parse(localStorage.getItem(PHONE_KEY) || '{}') || {}; } catch(e) { return {}; }
+    }
+    function savePhoneMap(map) {
+      try { localStorage.setItem(PHONE_KEY, JSON.stringify(map)); } catch(e) {}
+    }
+    function getPhoneMinutesForDate(dateKey) {
+      var map = loadPhoneUsage();
+      return parseInt(map[dateKey] || 0, 10) || 0;
+    }
+    function savePhoneUsage() {
+      var h = parseInt((document.getElementById('phoneHours') || {}).value || '0', 10) || 0;
+      var m = parseInt((document.getElementById('phoneMinutes') || {}).value || '0', 10) || 0;
+      if (h < 0) h = 0; if (m < 0) m = 0; if (m > 59) m = 59;
+      var total = h * 60 + m;
+      var key = jalaliToKey(toJalaliStr());
+      var map = loadPhoneUsage();
+      map[key] = total;
+      savePhoneMap(map);
+      updatePhoneHint();
+      showToast(total > 0 ? ('استفاده از گوشی امروز: ' + formatDuration(total)) : 'ثبت شد (صفر)');
+    }
+    function updatePhoneHint() {
+      var key = jalaliToKey(toJalaliStr());
+      var mins = getPhoneMinutesForDate(key);
+      var el = document.getElementById('phoneTodayHint');
+      if (!el) return;
+      if (mins > 0) {
+        el.textContent = 'امروز: ' + formatDuration(mins) + ' استفاده از گوشی ثبت شده';
+        var h = Math.floor(mins / 60), m = mins % 60;
+        var he = document.getElementById('phoneHours');
+        var me = document.getElementById('phoneMinutes');
+        if (he) he.value = h ? String(h) : '';
+        if (me) me.value = m ? String(m) : '';
+      } else {
+        el.textContent = 'هنوز برای امروز ثبت نشده';
+      }
+    }
+
+
     async function downloadDayImage(dateKey) {
       refreshSession();
       const daySessions = sessions.filter(function(s) {
@@ -2463,10 +3330,7 @@
       const totalMin = daySessions.reduce(function(s, x) { return s + x.minutes; }, 0);
       const totalTests = daySessions.reduce(function(s, x) { return s + (x.tests || 0); }, 0);
       let totalVideo = 0;
-      daySessions.forEach(function(s) { if (s.videoWatched) totalVideo += (s.videoHours || 0); });
-      // نمره هوشمند نسبت به روزهای قبل
-      const dayScore = calcDayScore(dateKey, totalMin, totalTests);
-
+      daySessions.forEach(function(s) { if (s.videoWatched) totalVideo += (s.videoMinutes || Math.round((s.videoHours || 0) * 60)); });
       let weekday = '';
       try {
         const d = parseJalali(daySessions[0].date);
@@ -2474,110 +3338,55 @@
       } catch (e) {}
 
       const isDark = (document.body.getAttribute('data-theme') || 'dark') === 'dark';
-      const bg = isDark ? '#0a1018' : '#f7f3ea';
-      const cardBg = isDark ? '#10202a' : '#f8fffe';
-      const textCol = isDark ? '#f5f0e6' : '#1a2e2c';
-      const muted = isDark ? '#a8c5c0' : '#3d6b66';
-      const accent = isDark ? '#2dd4bf' : '#0d9488';
-      const border = isDark ? 'rgba(45,212,191,0.35)' : 'rgba(13,148,136,0.25)';
-      const soft = isDark ? 'rgba(212,168,75,0.12)' : 'rgba(180,83,9,0.08)';
+      const bg = isDark ? '#0c0b09' : '#f7f4ef';
+      const cardBg = isDark ? '#1a1713' : '#faf8f4';
+      const textCol = isDark ? '#f7f2ea' : '#2a2620';
+      const muted = isDark ? '#c4b8a8' : '#5c554c';
+      const accent = isDark ? '#e0c9a0' : '#6b6358';
+      const border = isDark ? 'rgba(210,190,160,0.35)' : 'rgba(160,148,130,0.28)';
+      const soft = isDark ? 'rgba(224,201,160,0.12)' : 'rgba(107,99,88,0.08)';
+      const innerCard = isDark ? '#221e19' : '#ffffff';
+      const trackBg = isDark ? 'rgba(50,44,36,0.95)' : 'rgba(235,230,222,0.95)';
 
       const bySubj = {};
       daySessions.forEach(function(s) {
         if (!bySubj[s.subject]) {
-          bySubj[s.subject] = { minutes: 0, tests: 0, videoHours: 0, notes: [], sections: [], timeRanges: [], descriptive: false, hasVideo: false, specialized: isSpecialized(s.subject) };
+          bySubj[s.subject] = { minutes: 0, tests: 0, testsCorrect: 0, testsWrong: 0, videoHours: 0, notes: [], sections: [], studyTimes: [], videoTimes: [], videoNotes: [], descriptive: false, hasVideo: false, specialized: isSpecialized(s.subject) };
         }
         bySubj[s.subject].minutes += s.minutes;
         bySubj[s.subject].tests += (s.tests || 0);
+        bySubj[s.subject].testsCorrect += (s.testsCorrect || 0);
+        bySubj[s.subject].testsWrong += (s.testsWrong || 0);
         if (s.videoWatched) {
           bySubj[s.subject].videoHours += (s.videoHours || 0);
           bySubj[s.subject].hasVideo = true;
+          if (s.videoNote) bySubj[s.subject].videoNotes.push(s.videoNote);
         }
         if (s.descriptive) bySubj[s.subject].descriptive = true;
         if (s.note) bySubj[s.subject].notes.push(s.note);
         if (s.testSection) bySubj[s.subject].sections.push(s.testSection);
-        if (s.timeFrom && s.timeTo) bySubj[s.subject].timeRanges.push(s.timeFrom + '–' + s.timeTo);
+        if (s.timeFrom && s.timeTo) bySubj[s.subject].studyTimes.push(s.timeFrom + '–' + s.timeTo);
       });
       const subjList = Object.keys(bySubj).sort(function(a, b) {
         return bySubj[b].minutes - bySubj[a].minutes;
       });
 
-      // یادداشت روز از تقویم (اگر باشد)
-      var dayNoteText = '';
-      try {
-        var allNotes = getDayNotes();
-        if (allNotes && allNotes[dateKey]) dayNoteText = String(allNotes[dateKey]).trim();
-      } catch (e) {}
-
-      const headerH = 148;
-      const footerH = 56;
-      const pad = 28;
-      const width = 780;
-      const gap = 14;
-      const baseCardH = 110; // حداقل ارتفاع کارت بدون یادداشت
-
-      // محاسبه ارتفاع واقعی هر کارت قبل از رسم
-      function wrapTextMeasure(text, maxWidth, font) {
-        // موقت از یک canvas اندازه‌گیری می‌کنیم
-        var c = document.createElement('canvas').getContext('2d');
-        c.font = font;
-        var words = String(text).split(/\s+/);
-        var lines = [];
-        var line = '';
-        for (var i = 0; i < words.length; i++) {
-          var test = line ? (line + ' ' + words[i]) : words[i];
-          if (c.measureText(test).width > maxWidth && line) {
-            lines.push(line);
-            line = words[i];
-          } else {
-            line = test;
-          }
-        }
-        if (line) lines.push(line);
-        // اگر یک کلمه خیلی بلند باشد
-        if (!lines.length && text) {
-          var t = String(text);
-          while (t.length) {
-            var cut = t.length;
-            while (cut > 1 && c.measureText(t.slice(0, cut)).width > maxWidth) cut--;
-            lines.push(t.slice(0, cut));
-            t = t.slice(cut);
-          }
-        }
-        return lines.length ? lines : [''];
+      function calcCardH(info) {
+        let lines = 0;
+        if (info.studyTimes && info.studyTimes.length) lines++;
+        if (info.sections && info.sections.length) lines++;
+        if (info.notes && info.notes.length) lines++;
+        return 44 + 36 + lines * 20 + 30;
       }
 
-      var cardHeights = [];
-      var noteFont = '400 13px Vazirmatn, Cairo, Tahoma, sans-serif';
-      var textMaxW = width - pad * 2 - 50;
-      subjList.forEach(function(subj) {
-        var info = bySubj[subj];
-        var h = baseCardH;
-        if (info.timeRanges && info.timeRanges.length) {
-          var tLines = wrapTextMeasure('⏰ ' + info.timeRanges.join(' · '), textMaxW, noteFont);
-          h += tLines.length * 18;
-        }
-        if (info.sections && info.sections.length) {
-          var secLines = wrapTextMeasure('📝 تست‌های زده‌شده: ' + info.sections.join('، '), textMaxW, noteFont);
-          h += secLines.length * 18;
-        }
-        if (info.notes && info.notes.length) {
-          var nLines = wrapTextMeasure('📌 یادداشت: ' + info.notes.join(' | '), textMaxW, noteFont);
-          h += nLines.length * 18;
-        }
-        h = Math.max(baseCardH, h);
-        cardHeights.push(h);
-      });
-
-      var dayNoteH = 0;
-      if (dayNoteText) {
-        var dnLines = wrapTextMeasure('📝 یادداشت روز: ' + dayNoteText, textMaxW, noteFont);
-        dayNoteH = 24 + dnLines.length * 18 + 16;
-      }
-
-      var cardsTotalH = 0;
-      cardHeights.forEach(function(h) { cardsTotalH += h + gap; });
-      const height = headerH + dayNoteH + cardsTotalH + footerH + pad;
+      const headerH = 168;
+      const footerH = 48;
+      const pad = 32;
+      const width = 800;
+      const gap = 12;
+      let totalCardsH = 0;
+      subjList.forEach(function(subj) { totalCardsH += calcCardH(bySubj[subj]) + gap; });
+      const height = headerH + totalCardsH + footerH + 20;
 
       const canvas = document.createElement('canvas');
       canvas.width = width * 2;
@@ -2585,260 +3394,174 @@
       const ctx = canvas.getContext('2d');
       ctx.scale(2, 2);
 
-      function wrapText(text, maxWidth, font) {
-        ctx.font = font;
-        var words = String(text).split(/\s+/);
-        var lines = [];
-        var line = '';
-        for (var i = 0; i < words.length; i++) {
-          var test = line ? (line + ' ' + words[i]) : words[i];
-          if (ctx.measureText(test).width > maxWidth && line) {
-            lines.push(line);
-            line = words[i];
-          } else {
-            line = test;
-          }
-        }
-        if (line) lines.push(line);
-        if (!lines.length && text) {
-          var t = String(text);
-          while (t.length) {
-            var cut = t.length;
-            while (cut > 1 && ctx.measureText(t.slice(0, cut)).width > maxWidth) cut--;
-            lines.push(t.slice(0, cut));
-            t = t.slice(cut);
-          }
-        }
-        return lines.length ? lines : [''];
+      // background
+      const g = ctx.createLinearGradient(0, 0, width, height);
+      if (isDark) {
+        g.addColorStop(0, '#1a1610');
+        g.addColorStop(0.45, '#100e0b');
+        g.addColorStop(1, '#0a0907');
+      } else {
+        g.addColorStop(0, '#faf8f4');
+        g.addColorStop(0.5, '#f4f0ea');
+        g.addColorStop(1, '#ebe6de');
+      }
+      ctx.fillStyle = g;
+      ctx.fillRect(0, 0, width, height);
+
+      // soft glows
+      if (isDark) {
+        const rg1 = ctx.createRadialGradient(width * 0.2, 30, 0, width * 0.2, 30, 240);
+        rg1.addColorStop(0, 'rgba(224,201,160,0.16)');
+        rg1.addColorStop(1, 'transparent');
+        ctx.fillStyle = rg1;
+        ctx.fillRect(0, 0, width, height);
+        const rg2 = ctx.createRadialGradient(width * 0.85, height * 0.15, 0, width * 0.85, height * 0.15, 200);
+        rg2.addColorStop(0, 'rgba(200,170,120,0.1)');
+        rg2.addColorStop(1, 'transparent');
+        ctx.fillStyle = rg2;
+        ctx.fillRect(0, 0, width, height);
       }
 
-      // پس‌زمینه ساده و یکدست — بدون هاله
-      ctx.fillStyle = cardBg;
-      ctx.fillRect(0, 0, width, height);
-      // فقط یک خط دور ساده
-      ctx.strokeStyle = border;
-      ctx.lineWidth = 2;
-      ctx.strokeRect(1, 1, width - 2, height - 2);
+      // outer frame
+      roundRect(ctx, 16, 16, width - 32, height - 32, 24, cardBg, isDark ? 'rgba(224,201,160,0.4)' : border);
 
-      // هدر
+      // top accent line
+      const topG = ctx.createLinearGradient(40, 0, width - 40, 0);
+      topG.addColorStop(0, 'transparent');
+      topG.addColorStop(0.2, accent);
+      topG.addColorStop(0.8, accent);
+      topG.addColorStop(1, 'transparent');
+      ctx.fillStyle = topG;
+      ctx.fillRect(48, 28, width - 96, 2);
+
+      // header title
       ctx.textAlign = 'right';
       ctx.direction = 'rtl';
       ctx.fillStyle = accent;
       ctx.font = '700 26px Vazirmatn, Cairo, Tahoma, sans-serif';
-      ctx.fillText('📚 خلاصه مطالعه روز', width - pad - 6, 56);
+      ctx.fillText('خلاصه مطالعه روز', width - pad - 8, 58);
 
       ctx.fillStyle = textCol;
-      ctx.font = '600 17px Vazirmatn, Cairo, Tahoma, sans-serif';
-      const dateLabel = toPersian(daySessions[0].date) + (weekday ? '  —  ' + weekday : '');
-      ctx.fillText(dateLabel, width - pad - 6, 84);
+      ctx.font = '500 15px Vazirmatn, Cairo, Tahoma, sans-serif';
+      const dateLine = toPersian(dateKey) + (weekday ? '  ·  ' + weekday : '');
+      ctx.fillText(dateLine, width - pad - 8, 84);
 
-      // خلاصه به صورت بج‌های جدا
-      (function() {
-        var sx = width - pad - 6;
-        var sy = 112;
-        function sumPill(label, bg, bd, tc) {
-          ctx.font = '600 12px Vazirmatn, Cairo, Tahoma, sans-serif';
-          var tw = ctx.measureText(label).width;
-          var bw = tw + 18, bh = 26, bx = sx - bw, by = sy - 16, r = 9;
-          ctx.beginPath();
-          ctx.moveTo(bx + r, by);
-          ctx.arcTo(bx + bw, by, bx + bw, by + bh, r);
-          ctx.arcTo(bx + bw, by + bh, bx, by + bh, r);
-          ctx.arcTo(bx, by + bh, bx, by, r);
-          ctx.arcTo(bx, by, bx + bw, by, r);
-          ctx.closePath();
-          ctx.fillStyle = bg; ctx.fill();
-          ctx.strokeStyle = bd; ctx.lineWidth = 1.2; ctx.stroke();
-          ctx.fillStyle = tc; ctx.textAlign = 'right';
-          ctx.fillText(label, sx - 9, sy + 1);
-          sx -= (bw + 10);
-        }
-        sumPill('⏱ ' + formatDuration(totalMin), isDark ? 'rgba(45,212,191,0.18)' : 'rgba(13,148,136,0.12)', isDark ? '#2dd4bf' : '#0d9488', isDark ? '#5eead4' : '#0f766e');
-        if (totalTests > 0) sumPill('📝 ' + toPersian(totalTests) + ' تست', isDark ? 'rgba(244,114,182,0.16)' : 'rgba(219,39,119,0.1)', isDark ? '#f472b6' : '#db2777', isDark ? '#f9a8d4' : '#be185d');
-        if (totalVideo > 0) sumPill('🎬 ' + toPersian(Math.round(totalVideo * 10) / 10) + ' س فیلم', isDark ? 'rgba(168,85,247,0.16)' : 'rgba(126,34,206,0.1)', isDark ? '#c084fc' : '#7c3aed', isDark ? '#d8b4fe' : '#6b21a8');
-        sumPill(toPersian(subjList.length) + ' درس', isDark ? 'rgba(212,168,75,0.16)' : 'rgba(180,134,11,0.12)', isDark ? '#d4a84b' : '#b8860b', isDark ? '#e8c76a' : '#92640a');
-      })();
-
-      // خط تزئینی طلا–فیروزه زیر هدر
-      const lineGrad = ctx.createLinearGradient(pad, 0, width - pad, 0);
-      lineGrad.addColorStop(0, 'transparent');
-      lineGrad.addColorStop(0.2, isDark ? 'rgba(45,212,191,0.55)' : 'rgba(13,148,136,0.4)');
-      lineGrad.addColorStop(0.5, isDark ? 'rgba(212,168,75,0.75)' : 'rgba(184,134,11,0.55)');
-      lineGrad.addColorStop(0.8, isDark ? 'rgba(45,212,191,0.55)' : 'rgba(13,148,136,0.4)');
-      lineGrad.addColorStop(1, 'transparent');
-      ctx.strokeStyle = lineGrad;
-      ctx.lineWidth = 2.5;
-      ctx.beginPath();
-      ctx.moveTo(pad + 10, 130);
-      ctx.lineTo(width - pad - 10, 130);
-      ctx.stroke();
-
-      // کارت هر درس
-      function pill(label, bg, bd, tc, x, y) {
-        ctx.font = '600 12px Vazirmatn, Cairo, Tahoma, sans-serif';
+      // summary pills row
+      function headerPill(label, x, y) {
+        ctx.font = '600 13px Vazirmatn, Cairo, Tahoma, sans-serif';
         const tw = ctx.measureText(label).width;
-        const bw = tw + 16, bh = 24, bx = x - bw, by = y - 15, r = 8;
-        ctx.beginPath();
-        ctx.moveTo(bx + r, by);
-        ctx.arcTo(bx + bw, by, bx + bw, by + bh, r);
-        ctx.arcTo(bx + bw, by + bh, bx, by + bh, r);
-        ctx.arcTo(bx, by + bh, bx, by, r);
-        ctx.arcTo(bx, by, bx + bw, by, r);
-        ctx.closePath();
-        ctx.fillStyle = bg;
-        ctx.fill();
-        ctx.strokeStyle = bd;
-        ctx.lineWidth = 1.25;
-        ctx.stroke();
-        ctx.fillStyle = tc;
-        ctx.textAlign = 'right';
-        ctx.fillText(label, x - 8, y + 1);
-        return bw + 8;
-      }
-
-      // یادداشت روز (کامل، چندخطی)
-      let y = headerH + 8;
-      if (dayNoteText) {
-        const x0 = pad + 4;
-        const w0 = width - pad * 2 - 8;
-        const dnLines = wrapText('📝 یادداشت روز: ' + dayNoteText, w0 - 36, '600 13px Vazirmatn, Cairo, Tahoma, sans-serif');
-        const dnH = 22 + dnLines.length * 18 + 14;
-        roundRect(ctx, x0, y, w0, dnH, 14, isDark ? 'rgba(212,168,75,0.12)' : 'rgba(180,134,11,0.1)', isDark ? 'rgba(212,168,75,0.45)' : 'rgba(180,134,11,0.35)');
-        ctx.textAlign = 'right';
-        ctx.fillStyle = isDark ? '#e8c76a' : '#92640a';
-        ctx.font = '600 13px Vazirmatn, Cairo, Tahoma, sans-serif';
-        dnLines.forEach(function(ln, li) {
-          ctx.fillText(ln, x0 + w0 - 18, y + 24 + li * 18);
-        });
-        y += dnH + gap;
-      }
-
-      subjList.forEach(function(subj, idx) {
-        const info = bySubj[subj];
-        const cardH = cardHeights[idx];
-        const x0 = pad + 4;
-        const w0 = width - pad * 2 - 8;
-        const innerBg = isDark ? '#122028' : '#ffffff';
-        const cardBorder = isDark ? 'rgba(45, 212, 191, 0.35)' : 'rgba(13, 148, 136, 0.28)';
-        roundRect(ctx, x0, y, w0, cardH - 6, 16, innerBg, cardBorder);
-        // نوار طلایی سمت راست
-        ctx.fillStyle = isDark ? 'rgba(212,168,75,0.55)' : 'rgba(184,134,11,0.45)';
-        ctx.fillRect(x0 + w0 - 5, y + 10, 4, Math.max(20, cardH - 26));
-
-        // نام درس
-        ctx.textAlign = 'right';
-        ctx.font = '700 17px Vazirmatn, Cairo, Tahoma, sans-serif';
-        const subjW = ctx.measureText(subj).width;
+        const pw = tw + 22;
+        const ph = 28;
+        roundRect(ctx, x - pw, y - 18, pw, ph, 14, isDark ? 'rgba(224,201,160,0.1)' : 'rgba(107,99,88,0.08)', border);
         ctx.fillStyle = textCol;
-        ctx.fillText(subj, x0 + w0 - 22, y + 28);
-        const typeLab = info.specialized ? 'تخصصی' : 'عمومی';
-        const typeCol = info.specialized ? '#4ade80' : '#eab308';
-        ctx.font = '600 13px Vazirmatn, Cairo, Tahoma, sans-serif';
-        ctx.fillStyle = typeCol;
-        ctx.fillText(typeLab, x0 + w0 - 22 - subjW - 12, y + 28);
-
-        // بج‌ها
-        let bx = x0 + w0 - 18;
-        const by = y + 56;
-        const dur = formatDuration(info.minutes);
-        bx -= pill(dur, 'rgba(45,212,191,0.15)', '#2dd4bf', '#d4a84b', bx, by);
-        const showTests = info.specialized || info.tests > 0;
-        if (showTests) {
-          ctx.fillStyle = muted;
-          ctx.font = '700 14px Vazirmatn, Cairo, Tahoma, sans-serif';
-          ctx.fillText('·', bx - 2, by + 1);
-          bx -= 14;
-          const tLab = info.tests > 0 ? ('📝 ' + toPersian(info.tests) + ' تست') : '📝 بدون تست';
-          bx -= pill(tLab, 'rgba(244,114,182,0.12)', '#f472b6', '#f472b6', bx, by);
-        }
-        ctx.fillStyle = muted;
-        ctx.font = '700 14px Vazirmatn, Cairo, Tahoma, sans-serif';
-        ctx.fillText('·', bx - 2, by + 1);
-        bx -= 14;
-        let vLab = '🎬 فیلم دیده نشده';
-        if (info.hasVideo) {
-          const vh = info.videoHours || 0;
-          const vH = Math.floor(vh); const vM = Math.round((vh - vH) * 60);
-          vLab = '🎬 ' + (vH ? toPersian(vH) + 'س' : '') + (vM ? toPersian(vM) + 'د' : (vH ? '' : 'فیلم'));
-        }
-        bx -= pill(vLab, 'rgba(168,85,247,0.12)', '#c084fc', '#c084fc', bx, by);
-        if (info.descriptive) {
-          ctx.fillStyle = muted;
-          ctx.font = '700 14px Vazirmatn, Cairo, Tahoma, sans-serif';
-          ctx.fillText('·', bx - 2, by + 1);
-          bx -= 14;
-          bx -= pill('📄 تشریحی', 'rgba(249,115,22,0.12)', '#fb923c', '#fb923c', bx, by);
-        }
-
-        // جزئیات: زمان، تست، یادداشت — با پس‌زمینه رنگی خوانا
-        let ly = y + 80;
         ctx.textAlign = 'right';
-        const contentW = w0 - 40;
-        const plainColor = isDark ? '#d1d5db' : '#6b7280';
+        ctx.fillText(label, x - 11, y);
+        return pw + 10;
+      }
+      let hx = width - pad - 8;
+      const hy = 122;
+      hx -= headerPill('⏱️ ' + formatDuration(totalMin), hx, hy);
+      if (totalTests > 0) hx -= headerPill('📝 ' + toPersian(totalTests) + ' تست', hx, hy);
+      if (totalVideo > 0) hx -= headerPill('🎬 ' + formatDuration(totalVideo), hx, hy);
+      var phoneMin = getPhoneMinutesForDate(dateKey);
+      if (phoneMin > 0) hx -= headerPill('📱 ' + formatDuration(phoneMin), hx, hy);
+      hx -= headerPill(toPersian(subjList.length) + ' درس', hx, hy);
 
-        if (info.timeRanges && info.timeRanges.length) {
-          ctx.fillStyle = plainColor;
-          ctx.font = '400 13px Vazirmatn, Cairo, Tahoma, sans-serif';
-          const tLine = '⏰ ' + info.timeRanges.map(function(t){ return t.replace(/\d/g, function(d){ return '۰۱۲۳۴۵۶۷۸۹'[d]; }); }).join(' · ');
-          wrapText(tLine, contentW, ctx.font).forEach(function(ln) {
-            ctx.fillText(ln, x0 + w0 - 18, ly);
-            ly += 18;
-          });
+      // subject cards
+      function pill(label, bgC, fg, bd, x, y) {
+        ctx.font = '600 12.5px Vazirmatn, Cairo, Tahoma, sans-serif';
+        const tw = ctx.measureText(label).width;
+        const pw = tw + 18;
+        const ph = 24;
+        roundRect(ctx, x - pw, y - 15, pw, ph, 12, bgC, bd);
+        ctx.fillStyle = fg;
+        ctx.textAlign = 'right';
+        ctx.fillText(label, x - 9, y + 1);
+        return pw + 8;
+      }
+
+      let y = headerH + 4;
+      subjList.forEach(function(subj) {
+        const info = bySubj[subj];
+        const x0 = pad + 6;
+        const w0 = width - pad * 2 - 12;
+        const thisH = calcCardH(info);
+
+        roundRect(ctx, x0, y, w0, thisH, 18, innerCard, border);
+        // side accent bar
+        ctx.fillStyle = accent;
+        ctx.globalAlpha = 0.7;
+        ctx.fillRect(x0 + w0 - 4, y + 16, 3.5, thisH - 32);
+        ctx.globalAlpha = 1;
+
+        // subject name
+        ctx.textAlign = 'right';
+        ctx.font = '700 18px Vazirmatn, Cairo, Tahoma, sans-serif';
+        ctx.fillStyle = textCol;
+        ctx.fillText(subj, x0 + w0 - 20, y + 32);
+        const subjW = ctx.measureText(subj).width;
+        ctx.font = '600 12px Vazirmatn, Cairo, Tahoma, sans-serif';
+        ctx.fillStyle = muted;
+        ctx.fillText(info.specialized ? 'تخصصی' : 'عمومی', x0 + w0 - 20 - subjW - 14, y + 32);
+
+        // pills under title — رنگ اختصاصی هر مورد
+        let bx = x0 + w0 - 18;
+        const by = y + 58;
+        bx -= pill(formatDuration(info.minutes), isDark ? 'rgba(240,212,160,0.16)' : 'rgba(107,99,88,0.1)', accent, border, bx, by);
+        if (info.tests > 0) {
+          let tLab = '📝 ' + toPersian(info.tests);
+          if (info.testsCorrect || info.testsWrong) tLab += ' (✅' + toPersian(info.testsCorrect) + '/❌' + toPersian(info.testsWrong) + ')';
+          bx -= pill(tLab, isDark ? 'rgba(244,114,182,0.15)' : 'rgba(236,72,153,0.1)', '#f472b6', isDark ? 'rgba(244,114,182,0.35)' : 'rgba(236,72,153,0.3)', bx, by);
         }
-        if (info.sections && info.sections.length) {
-          ctx.fillStyle = plainColor;
-          ctx.font = '400 13px Vazirmatn, Cairo, Tahoma, sans-serif';
-          wrapText('📝 تست‌های زده‌شده: ' + info.sections.join('، '), contentW, ctx.font).forEach(function(ln) {
-            ctx.fillText(ln, x0 + w0 - 18, ly);
-            ly += 18;
-          });
+        if (info.hasVideo) {
+          const vMin = Math.round((info.videoHours || 0) * 60);
+          bx -= pill('🎬 ' + (vMin ? formatDuration(vMin) : 'فیلم'), isDark ? 'rgba(168,85,247,0.15)' : 'rgba(147,51,234,0.1)', '#c084fc', isDark ? 'rgba(168,85,247,0.35)' : 'rgba(147,51,234,0.3)', bx, by);
         }
-        if (info.notes && info.notes.length) {
-          ctx.fillStyle = plainColor;
-          ctx.font = '400 13px Vazirmatn, Cairo, Tahoma, sans-serif';
-          wrapText('📌 یادداشت: ' + info.notes.join(' | '), contentW, ctx.font).forEach(function(ln) {
-            ctx.fillText(ln, x0 + w0 - 18, ly);
-            ly += 18;
-          });
+        if (info.descriptive) {
+          bx -= pill('📄 تشریحی', isDark ? 'rgba(249,115,22,0.15)' : 'rgba(249,115,22,0.1)', '#fb923c', isDark ? 'rgba(249,115,22,0.35)' : 'rgba(249,115,22,0.3)', bx, by);
         }
 
-        // نوار پیشرفت پایین کارت
+        // meta lines — clean stacked, never overlapping bar
+        let ly = y + 82;
+        ctx.font = '400 13px Vazirmatn, Cairo, Tahoma, sans-serif';
+        ctx.textAlign = 'right';
+        const lineMaxW = w0 - 48;
+        function drawMeta(prefix, value, col) {
+          let text = prefix + value;
+          while (ctx.measureText(text).width > lineMaxW && text.length > 16) text = text.slice(0, -2);
+          if ((prefix + value) !== text) text = text.slice(0, -1) + '…';
+          ctx.fillStyle = col || muted;
+          ctx.fillText(text, x0 + w0 - 20, ly);
+          ly += 20;
+        }
+        if (info.studyTimes && info.studyTimes.length) {
+          const tr = info.studyTimes.map(function(t) {
+            return String(t).replace(/\d/g, function(d) { return '۰۱۲۳۴۵۶۷۸۹'[d]; });
+          }).join('  ·  ');
+          drawMeta('📚 ', tr, accent);
+        }
+        if (info.sections && info.sections.length) drawMeta('📝 ', info.sections.join('، '), muted);
+        if (info.notes && info.notes.length) drawMeta('📌 ', info.notes.join(' | '), muted);
+
+        // progress bar at bottom
         const barTrackX = x0 + 18;
-        const barTrackW = w0 - 40;
-        const barY = y + cardH - 22;
-        const barH2 = 7;
+        const barTrackW = w0 - 42;
+        const barY = y + thisH - 18;
+        const barH2 = 6;
         const pct = totalMin > 0 ? Math.min(1, info.minutes / totalMin) : 0;
-        ctx.fillStyle = isDark ? 'rgba(30,50,55,0.9)' : 'rgba(204,251,241,0.9)';
-        ctx.beginPath();
-        const br = 4;
-        ctx.moveTo(barTrackX + br, barY);
-        ctx.arcTo(barTrackX + barTrackW, barY, barTrackX + barTrackW, barY + barH2, br);
-        ctx.arcTo(barTrackX + barTrackW, barY + barH2, barTrackX, barY + barH2, br);
-        ctx.arcTo(barTrackX, barY + barH2, barTrackX, barY, br);
-        ctx.arcTo(barTrackX, barY, barTrackX + barTrackW, barY, br);
-        ctx.closePath();
-        ctx.fill();
+        roundRect(ctx, barTrackX, barY, barTrackW, barH2, 3, trackBg, null);
         if (pct > 0) {
-          const fillW = Math.max(10, barTrackW * pct);
+          const fillW = Math.max(12, barTrackW * pct);
           const bg2 = ctx.createLinearGradient(barTrackX, 0, barTrackX + fillW, 0);
-          bg2.addColorStop(0, '#5eead4');
-          bg2.addColorStop(0.6, '#2dd4bf');
-          bg2.addColorStop(1, '#d4a84b');
-          ctx.fillStyle = bg2;
-          ctx.beginPath();
-          ctx.moveTo(barTrackX + br, barY);
-          ctx.arcTo(barTrackX + fillW, barY, barTrackX + fillW, barY + barH2, br);
-          ctx.arcTo(barTrackX + fillW, barY + barH2, barTrackX, barY + barH2, br);
-          ctx.arcTo(barTrackX, barY + barH2, barTrackX, barY, br);
-          ctx.arcTo(barTrackX, barY, barTrackX + fillW, barY, br);
-          ctx.closePath();
-          ctx.fill();
+          bg2.addColorStop(0, isDark ? '#a89888' : '#8a7f70');
+          bg2.addColorStop(1, accent);
+          roundRect(ctx, barTrackX, barY, fillW, barH2, 3, bg2, null);
         }
 
-        y += cardH + gap - 6;
+        y += thisH + gap;
       });
 
-      // فوتر
+      // footer
       ctx.fillStyle = muted;
       ctx.font = '400 12px Vazirmatn, Cairo, Tahoma, sans-serif';
       ctx.textAlign = 'center';
@@ -2855,6 +3578,7 @@
         showToast('تصویر روز دانلود شد ✓');
       }, 'image/png');
     }
+
 
     function roundRect(ctx, x, y, w, h, r, fill, stroke) {
       ctx.beginPath();
@@ -2897,16 +3621,21 @@
         g.addColorStop(0, '#f8fffe');
         g.addColorStop(1, '#ccfbf1');
       }
+      ctx.fillStyle = g;
+      ctx.fillRect(0, 0, width, height);
+      ctx.fillStyle = isDark ? 'rgba(45,212,191,0.08)' : 'rgba(13,148,136,0.06)';
+      for (let px = 12; px < width; px += 28) {
+        for (let py = 12; py < height; py += 28) {
+          ctx.beginPath(); ctx.arc(px, py, 1.1, 0, Math.PI * 2); ctx.fill();
+        }
+      }
+
       const cardBg = isDark ? '#10202a' : '#f8fffe';
       const textCol = isDark ? '#f5f0e6' : '#1a2e2c';
       const muted = isDark ? '#a8c5c0' : '#3d6b66';
-      const accent = isDark ? '#2dd4bf' : '#0d9488';
-      const border = isDark ? 'rgba(45,212,191,0.35)' : 'rgba(13,148,136,0.28)';
-      ctx.fillStyle = cardBg;
-      ctx.fillRect(0, 0, width, height);
-      ctx.strokeStyle = border;
-      ctx.lineWidth = 2;
-      ctx.strokeRect(1, 1, width - 2, height - 2);
+      const accent = isDark ? '#c4b5a0' : '#6b6358';
+      const border = isDark ? 'rgba(212,168,75,0.4)' : 'rgba(13,148,136,0.28)';
+      roundRect(ctx, 16, 16, width - 32, height - 32, 20, cardBg, border);
 
       ctx.textAlign = 'right';
       ctx.direction = 'rtl';
@@ -2970,8 +3699,8 @@
         if (wa) {
           const grad = ctx.createLinearGradient(ax, 0, ax + wa, 0);
           grad.addColorStop(0, '#5eead4');
-          grad.addColorStop(0.6, '#2dd4bf');
-          grad.addColorStop(1, '#d4a84b');
+          grad.addColorStop(0.6, '#c4b5a0');
+          grad.addColorStop(1, '#b8a990');
           roundBar(ax, y + 6, wa, barH, grad);
         }
         ctx.fillStyle = accent;
@@ -3251,9 +3980,9 @@
             ? toPersian(Math.floor(d.m/60)) + 'س' + (d.m%60 ? toPersian(d.m%60) + 'د' : '')
             : toPersian(d.m) + 'د');
           const barColor = d.isToday
-            ? 'linear-gradient(180deg,#5eead4,#d4a84b)'
+            ? 'linear-gradient(180deg,#d8ccb8,#c4b5a0)'
             : (d.m === 0 ? 'rgba(100,140,135,0.25)' : 'linear-gradient(180deg,var(--accent-soft),var(--accent))');
-          const boxBorder = d.isToday ? '1.5px solid #d4a84b' : '1px solid var(--border)';
+          const boxBorder = d.isToday ? '1.5px solid #c4b5a0' : '1px solid var(--border)';
           const bgBox = d.isToday ? 'rgba(45,212,191,0.1)' : 'transparent';
           const tipText = formatDuration(d.m) + (d.tests > 0 ? ' · 📝 ' + toPersian(d.tests) + ' تست' : ' · بدون تست');
           html += '<div class="chart-bar-wrap" onclick="toggleChartTip(this)" title="' + tipText.replace(/"/g, '&quot;') + '" style="flex:1;min-width:44px;display:flex;flex-direction:column;align-items:center;gap:6px;padding:6px 2px;border-radius:10px;background:' + bgBox + ';border:' + boxBorder + ';position:relative;cursor:pointer;">' +
@@ -3422,20 +4151,40 @@
       if (!active.length) { showToast('جلسه‌ای برای کپی نیست', true); return; }
       const last = active[0];
       document.getElementById('subject').value = last.subject;
-      document.getElementById('hours').value = Math.floor((last.minutes||0)/60) || '';
-      document.getElementById('minutes').value = ((last.minutes||0)%60) || '';
-      document.getElementById('tests').value = last.tests || '';
-      if (last.testSection) document.getElementById('testSection').value = last.testSection;
-      document.getElementById('videoWatched').value = last.videoWatched ? 'yes' : 'no';
-      toggleVideoHours();
+      if (last.timeFrom && last.timeTo) {
+        document.getElementById('timeFrom').value = last.timeFrom;
+        document.getElementById('timeTo').value = last.timeTo;
+        document.getElementById('studyMinutes').value = String(last.minutes || 0);
+        var disp = document.getElementById('studyTimeDisplay');
+        if (disp) disp.value = formatTimeFa(last.timeFrom) + ' تا ' + formatTimeFa(last.timeTo);
+        var hint = document.getElementById('studyDurationHint');
+        if (hint) hint.textContent = formatDuration(last.minutes || 0);
+      }
+      if (last.tests) {
+        var te = document.getElementById('testsEnabled'); if (te) te.checked = true;
+        document.getElementById('tests').value = String(last.tests);
+        document.getElementById('testsCorrect').value = String(last.testsCorrect || 0);
+        document.getElementById('testsWrong').value = String(last.testsWrong || 0);
+        document.getElementById('testSection').value = last.testSection || '';
+        var tbtn = document.getElementById('testsDetailBtn'); if (tbtn) tbtn.style.display = '';
+        var tsum = document.getElementById('testsSummary');
+        if (tsum) { tsum.style.display = ''; tsum.textContent = toPersian(last.tests) + ' تست'; }
+      }
       if (last.videoWatched) {
-        const vh = last.videoHours || 0;
-        document.getElementById('videoHours').value = Math.floor(vh) || '';
-        document.getElementById('videoMinutes').value = Math.round((vh - Math.floor(vh))*60) || '';
+        var ve = document.getElementById('videoEnabled'); if (ve) ve.checked = true;
+        document.getElementById('videoFrom').value = last.videoFrom || '';
+        document.getElementById('videoTo').value = last.videoTo || '';
+        document.getElementById('videoMinutes').value = String(last.videoMinutes || Math.round((last.videoHours||0)*60));
+        document.getElementById('videoNote').value = last.videoNote || '';
+        var vbtn = document.getElementById('videoDetailBtn'); if (vbtn) vbtn.style.display = '';
+        var vsum = document.getElementById('videoSummary');
+        if (vsum) { vsum.style.display = ''; vsum.textContent = 'فیلم ثبت‌شده'; }
       }
       const ds = document.getElementById('descriptiveStudy');
       if (ds) ds.checked = !!last.descriptive;
       showToast('فرم با درس قبلی پر شد — در صورت نیاز ویرایش و ثبت کن');
+      var addCard = document.getElementById('addFormCard');
+      if (addCard) addCard.classList.remove('collapsed');
       document.getElementById('addForm').scrollIntoView({ behavior: 'smooth', block: 'center' });
     }
     function copyTodaySummary() {
@@ -4131,6 +4880,9 @@
       var el = document.getElementById('timerDisplay');
       if (el) el.textContent = timerFormat(timerState.elapsed);
       timerUpdateRing(timerState.elapsed);
+      if (timerState.elapsed >= 30000) {
+        try { timerFillFormSilent(); } catch (e) {}
+      }
     }
     function timerResume() {
       if (timerState.running) return;
@@ -4156,28 +4908,54 @@
       if (timerState.running) ms += Date.now() - timerState.startedAt;
       return Math.floor(ms / 60000);
     }
-    function timerFillForm() {
-      var totalMin = timerGetMinutes();
-      if (totalMin <= 0) {
-        var ms = timerState.elapsed + (timerState.running ? Date.now() - timerState.startedAt : 0);
-        if (ms < 1000) { showToast('اول تایمر را شروع کن', true); return; }
-        totalMin = Math.max(1, Math.round(ms / 60000));
+    function timerComputeRange() {
+      var ms = timerState.elapsed + (timerState.running ? Date.now() - timerState.startedAt : 0);
+      var totalMin = Math.floor(ms / 60000);
+      if (totalMin <= 0 && ms >= 1000) totalMin = 1;
+      var clockStart = timerState.clockStart || '';
+      if (!clockStart && ms > 0) {
+        var d0 = new Date(Date.now() - ms);
+        clockStart = pad2(d0.getHours()) + ':' + pad2(d0.getMinutes());
+        timerState.clockStart = clockStart;
       }
-      var h = Math.floor(totalMin / 60);
-      var m = totalMin % 60;
-      var hoursEl = document.getElementById('hours');
-      var minsEl = document.getElementById('minutes');
-      if (hoursEl) hoursEl.value = h;
-      if (minsEl) minsEl.value = m;
+      var clockEnd = pad2(new Date().getHours()) + ':' + pad2(new Date().getMinutes());
+      if (clockStart && totalMin > 0) {
+        var startMins = parseTimeToMinutes(clockStart);
+        if (startMins != null) {
+          var endMins = (startMins + totalMin) % (24 * 60);
+          clockEnd = pad2(Math.floor(endMins / 60)) + ':' + pad2(endMins % 60);
+        }
+      }
+      return { totalMin: totalMin, clockStart: clockStart, clockEnd: clockEnd, ms: ms };
+    }
+    function timerFillFormSilent() {
+      var r = timerComputeRange();
+      if (r.ms < 1000) return;
+      if (r.clockStart) {
+        document.getElementById('timeFrom').value = r.clockStart;
+        document.getElementById('timeTo').value = r.clockEnd;
+        document.getElementById('studyMinutes').value = String(Math.max(1, r.totalMin));
+        var disp = document.getElementById('studyTimeDisplay');
+        if (disp) disp.value = formatTimeFa(r.clockStart) + ' تا ' + formatTimeFa(r.clockEnd);
+        var hint = document.getElementById('studyDurationHint');
+        if (hint) hint.textContent = formatDuration(Math.max(1, r.totalMin));
+      } else {
+        document.getElementById('studyMinutes').value = String(Math.max(1, r.totalMin));
+      }
       var subj = timerState.subject || (document.getElementById('timerSubject') && document.getElementById('timerSubject').value) || '';
       var formSubj = document.getElementById('subject');
       if (formSubj && subj) formSubj.value = subj;
-      // باز کردن بخش ثبت مطالعه
+    }
+    function timerFillForm() {
+      var r = timerComputeRange();
+      if (r.ms < 1000) { showToast('اول تایمر را شروع کن', true); return; }
+      timerFillFormSilent();
+      var subj = timerState.subject || (document.getElementById('timerSubject') && document.getElementById('timerSubject').value) || '';
       var addCard = document.getElementById('addFormCard');
       if (addCard) addCard.classList.remove('collapsed');
       var formCard = document.getElementById('addForm');
       if (formCard) formCard.scrollIntoView({ behavior: 'smooth', block: 'center' });
-      showToast((subj ? ('درس «' + subj + '» — ') : '') + 'زمان: ' + formatDuration(totalMin));
+      showToast((subj ? ('درس «' + subj + '» — ') : '') + formatTimeFa(r.clockStart) + ' تا ' + formatTimeFa(r.clockEnd) + ' (' + formatDuration(Math.max(1, r.totalMin)) + ')');
     }
     function timerSaveSession() {
       var totalMin = timerGetMinutes();
@@ -4256,8 +5034,13 @@
         var el = document.getElementById('consultantDate');
         if (el) el.value = key.replace(/-/g, '/');
         closeCalendar();
-        loadConsultantFields(key);
-        viewConsultantSelected();
+        return;
+      }
+      if (calPickerMode === 'consultantFilter') {
+        var el = document.getElementById('consultantFilterDate');
+        if (el) el.value = key.replace(/-/g, '/');
+        closeCalendar();
+        try { renderConsultantPlans(); } catch (e) {}
         return;
       }
       if (calPickerMode === 'maz') {
@@ -4302,7 +5085,7 @@
         body += '<div style="margin-top:8px;border-top:1px solid var(--border);padding-top:8px;">';
         daySessions.forEach(function(s) {
           body += '<div style="margin-bottom:4px;">• ' + escapeHtml(s.subject) + ' — ' + formatDuration(s.minutes);
-          if (s.timeFrom && s.timeTo) body += ' <span style="color:var(--accent);">(' + toPersian(s.timeFrom) + ' تا ' + toPersian(s.timeTo) + ')</span>';
+          if (s.timeFrom && s.timeTo) body += ' <span style="color:var(--accent);">📚 ' + toPersian(s.timeFrom) + ' تا ' + toPersian(s.timeTo) + '</span>';
           body += '</div>';
         });
         body += '</div>';
@@ -4597,144 +5380,246 @@
     })();
 
     // ===== برنامه مشاور =====
-    var CONSULTANT_FIELDS = ['زیست','شیمی','فیزیک','ریاضی','عمومی'];
-    function getConsultantPlans() {
-      try { return JSON.parse(localStorage.getItem('study_consultant_plans') || '{}'); } catch(e) { return {}; }
-    }
-    function normalizeConsultantPlan(raw) {
-      if (!raw) return null;
-      if (typeof raw === 'string') {
-        return { زیست: '', شیمی: '', فیزیک: '', ریاضی: '', عمومی: raw };
+    var CONSULTANT_SUBJECTS = [
+      { id: 'زیست', icon: '🧬', color: '#34d399' },
+      { id: 'شیمی', icon: '⚗️', color: '#60a5fa' },
+      { id: 'فیزیک', icon: '⚛️', color: '#a78bfa' },
+      { id: 'ریاضی', icon: '📐', color: '#c4b5a0' },
+      { id: 'عمومی', icon: '📚', color: '#f472b6' }
+    ];
+    function consultantMeta(subj) {
+      for (var i = 0; i < CONSULTANT_SUBJECTS.length; i++) {
+        if (CONSULTANT_SUBJECTS[i].id === subj) return CONSULTANT_SUBJECTS[i];
       }
-      return raw;
+      return { id: subj, icon: '📖', color: 'var(--accent)' };
     }
-    function formatConsultantPlan(plan) {
-      if (!plan) return '';
-      plan = normalizeConsultantPlan(plan);
-      var parts = [];
-      CONSULTANT_FIELDS.forEach(function(f) {
-        if (plan[f] && String(plan[f]).trim()) parts.push(f + ': ' + String(plan[f]).trim());
-      });
-      return parts.join(' · ');
-    }
-    function loadConsultantFields(key) {
-      var plans = getConsultantPlans();
-      var plan = normalizeConsultantPlan(plans[key]) || {};
-      CONSULTANT_FIELDS.forEach(function(f) {
-        var el = document.getElementById('consultant_' + f);
-        if (el) el.value = plan[f] || '';
-      });
-    }
-    function saveConsultantPlan() {
-      var dateEl = document.getElementById('consultantDate');
-      var dateStr = (dateEl && dateEl.value || '').trim();
-      if (!dateStr) { showToast('تاریخ را از تقویم انتخاب کن', true); return; }
-      var key = jalaliToKey(dateStr.replace(/-/g, '/'));
-      var plan = {};
-      var hasAny = false;
-      CONSULTANT_FIELDS.forEach(function(f) {
-        var el = document.getElementById('consultant_' + f);
-        var v = el ? (el.value || '').trim() : '';
-        plan[f] = v;
-        if (v) hasAny = true;
-      });
-      if (!hasAny) { showToast('حداقل یک درس را پر کن', true); return; }
-      var plans = getConsultantPlans();
-      plans[key] = plan;
-      localStorage.setItem('study_consultant_plans', JSON.stringify(plans));
-      renderConsultantPlans();
-      renderTodayPlanBanner();
-      viewConsultantSelected();
-      showToast('برنامه مشاور ذخیره شد ✓');
-    }
-    function deleteConsultantPlan() {
-      var dateEl = document.getElementById('consultantDate');
-      var dateStr = (dateEl && dateEl.value || '').trim();
-      if (!dateStr) { showToast('تاریخ را انتخاب کن', true); return; }
-      var key = jalaliToKey(dateStr.replace(/-/g, '/'));
-      var plans = getConsultantPlans();
-      if (!plans[key]) { showToast('برنامه‌ای برای این تاریخ نیست', true); return; }
-      delete plans[key];
-      localStorage.setItem('study_consultant_plans', JSON.stringify(plans));
-      CONSULTANT_FIELDS.forEach(function(f) {
-        var el = document.getElementById('consultant_' + f);
-        if (el) el.value = '';
-      });
-      renderConsultantPlans();
-      renderTodayPlanBanner();
-      var viewEl = document.getElementById('consultantSelectedView');
-      if (viewEl) viewEl.style.display = 'none';
-      showToast('برنامه حذف شد');
-    }
-    function viewConsultantSelected() {
-      var dateEl = document.getElementById('consultantDate');
-      var viewEl = document.getElementById('consultantSelectedView');
-      if (!dateEl || !viewEl) return;
-      var dateStr = (dateEl.value || '').trim();
-      if (!dateStr) { viewEl.style.display = 'none'; return; }
-      var key = jalaliToKey(dateStr.replace(/-/g, '/'));
-      var plan = normalizeConsultantPlan(getConsultantPlans()[key]);
-      viewEl.style.display = '';
-      if (!plan) {
-        viewEl.innerHTML = '<span style="color:var(--text-muted);">برای ' + toPersian(key) + ' برنامه‌ای ثبت نشده</span>';
-        return;
-      }
-      var html = '<strong style="color:var(--accent);">برنامه ' + toPersian(key) + '</strong>';
-      CONSULTANT_FIELDS.forEach(function(f) {
-        if (plan[f] && String(plan[f]).trim()) {
-          html += '<div style="margin-top:6px;"><span style="color:var(--accent);font-weight:600;">' + f + ':</span> ' + escapeHtml(plan[f]) + '</div>';
+    function getConsultantItems() {
+      try {
+        var raw = JSON.parse(localStorage.getItem('study_consultant_plans') || 'null');
+        // فرمت جدید: آرایه آیتم‌ها
+        if (raw && Array.isArray(raw.items)) return raw.items;
+        // فرمت قدیمی: { "1403/07/01": { زیست: "...", ... } }
+        if (raw && typeof raw === 'object' && !Array.isArray(raw)) {
+          var items = [];
+          Object.keys(raw).forEach(function(dateKey) {
+            var plan = raw[dateKey];
+            if (typeof plan === 'string') {
+              items.push({ id: 'm_' + dateKey + '_عمومی', subject: 'عمومی', date: dateKey.replace(/-/g, '/'), text: plan });
+            } else if (plan && typeof plan === 'object') {
+              Object.keys(plan).forEach(function(subj) {
+                if (plan[subj] && String(plan[subj]).trim()) {
+                  items.push({
+                    id: 'm_' + dateKey + '_' + subj,
+                    subject: subj,
+                    date: dateKey.replace(/-/g, '/'),
+                    text: String(plan[subj]).trim()
+                  });
+                }
+              });
+            }
+          });
+          return items;
         }
-      });
-      viewEl.innerHTML = html;
+      } catch (e) {}
+      return [];
+    }
+    function saveConsultantItems(items) {
+      localStorage.setItem('study_consultant_plans', JSON.stringify({ items: items || [] }));
+    }
+    function clearConsultantForm() {
+      var t = document.getElementById('consultantText');
+      if (t) t.value = '';
+    }
+    function clearConsultantFilter() {
+      var el = document.getElementById('consultantFilterDate');
+      if (el) el.value = '';
+      var s = document.getElementById('consultantFilterSubject');
+      if (s) s.value = '';
+      renderConsultantPlans();
+    }
+    function saveConsultantItem() {
+      var subjEl = document.getElementById('consultantSubject');
+      var dateEl = document.getElementById('consultantDate');
+      var textEl = document.getElementById('consultantText');
+      var subject = subjEl ? subjEl.value : '';
+      var dateStr = (dateEl && dateEl.value || '').trim().replace(/-/g, '/');
+      var text = (textEl && textEl.value || '').trim();
+      if (!subject) { showToast('درس را انتخاب کن', true); return; }
+      if (!dateStr) { showToast('تاریخ را از تقویم انتخاب کن', true); return; }
+      if (!text) { showToast('متن برنامه را بنویس', true); return; }
+      var keyDate = jalaliToKey(dateStr);
+      var items = getConsultantItems();
+      // اگر همان درس+تاریخ بود، آپدیت کن
+      var found = -1;
+      for (var i = 0; i < items.length; i++) {
+        if (items[i].subject === subject && jalaliToKey(String(items[i].date).replace(/-/g, '/')) === keyDate) {
+          found = i; break;
+        }
+      }
+      var entry = {
+        id: found >= 0 ? items[found].id : ('c_' + Date.now() + '_' + Math.floor(Math.random() * 1000)),
+        subject: subject,
+        date: keyDate.replace(/-/g, '/'),
+        text: text,
+        updatedAt: new Date().toISOString()
+      };
+      if (found >= 0) items[found] = entry;
+      else items.unshift(entry);
+      saveConsultantItems(items);
+      if (textEl) textEl.value = '';
+      renderConsultantPlans();
+      renderTodayPlanBanner();
+      showToast('برنامه «' + subject + '» برای ' + toPersian(keyDate) + ' ذخیره شد ✓');
+    }
+    function deleteConsultantItem(id) {
+      if (!confirm('این مورد حذف شود؟')) return;
+      var items = getConsultantItems().filter(function(x) { return x.id !== id; });
+      saveConsultantItems(items);
+      renderConsultantPlans();
+      renderTodayPlanBanner();
+      showToast('حذف شد');
+    }
+    function editConsultantItem(id) {
+      var items = getConsultantItems();
+      var it = null;
+      for (var i = 0; i < items.length; i++) if (items[i].id === id) { it = items[i]; break; }
+      if (!it) return;
+      var subjEl = document.getElementById('consultantSubject');
+      var dateEl = document.getElementById('consultantDate');
+      var textEl = document.getElementById('consultantText');
+      if (subjEl) subjEl.value = it.subject;
+      if (dateEl) dateEl.value = String(it.date).replace(/-/g, '/');
+      if (textEl) textEl.value = it.text || '';
+      try { toggleCollapse('consultantCard'); } catch (e) {}
+      var card = document.getElementById('consultantCard');
+      if (card && card.classList.contains('collapsed')) toggleCollapse('consultantCard');
+      showToast('برای ویرایش، متن را عوض کن و دوباره ذخیره بزن');
     }
     function renderConsultantPlans() {
+      var dateEl = document.getElementById('consultantDate');
+      if (dateEl && !(dateEl.value || '').trim()) {
+        try { dateEl.value = toJalaliStr(); } catch (e) {}
+      }
       var el = document.getElementById('consultantPlanList');
       var todayEl = document.getElementById('todayConsultantPlan');
-      if (!el) return;
-      var plans = getConsultantPlans();
+      var items = getConsultantItems();
       var todayKey = jalaliToKey(toJalaliStr());
+
+      // خلاصه امروز داخل کارت
       if (todayEl) {
-        var todayPlan = normalizeConsultantPlan(plans[todayKey]);
-        if (todayPlan && formatConsultantPlan(todayPlan)) {
-          todayEl.innerHTML = '<strong>امروز:</strong> ' + escapeHtml(formatConsultantPlan(todayPlan));
+        var todayItems = items.filter(function(it) {
+          return jalaliToKey(String(it.date).replace(/-/g, '/')) === todayKey;
+        });
+        if (!todayItems.length) {
+          todayEl.innerHTML = '<span style="color:var(--text-muted);font-size:0.9rem;">برای امروز هنوز برنامه‌ای ثبت نشده</span>';
         } else {
-          todayEl.innerHTML = '<span style="color:var(--text-muted);">برای امروز برنامه‌ای ثبت نشده</span>';
+          todayEl.innerHTML = todayItems.map(function(it) {
+            var m = consultantMeta(it.subject);
+            return '<div style="display:flex;gap:8px;align-items:flex-start;margin-top:6px;">' +
+              '<span style="font-size:1.1rem;">' + m.icon + '</span>' +
+              '<div><strong style="color:' + m.color + ';">' + escapeHtml(it.subject) + '</strong>' +
+              '<div style="font-size:0.9rem;line-height:1.6;">' + escapeHtml(it.text) + '</div></div></div>';
+          }).join('');
         }
       }
-      var keys = Object.keys(plans).sort().reverse();
-      if (!keys.length) {
-        el.innerHTML = '<div style="color:var(--text-muted);font-size:0.88rem;padding:8px;">هنوز برنامه‌ای ذخیره نشده</div>';
+
+      if (!el) return;
+      var filterDate = ((document.getElementById('consultantFilterDate') || {}).value || '').trim();
+      var filterSubj = ((document.getElementById('consultantFilterSubject') || {}).value || '').trim();
+      var filtered = items.slice();
+      if (filterDate) {
+        var fk = jalaliToKey(filterDate.replace(/-/g, '/'));
+        filtered = filtered.filter(function(it) {
+          return jalaliToKey(String(it.date).replace(/-/g, '/')) === fk;
+        });
+      }
+      if (filterSubj) {
+        filtered = filtered.filter(function(it) { return it.subject === filterSubj; });
+      }
+      filtered.sort(function(a, b) {
+        var da = jalaliToKey(String(a.date).replace(/-/g, '/'));
+        var db = jalaliToKey(String(b.date).replace(/-/g, '/'));
+        if (da !== db) return db.localeCompare(da);
+        return (a.subject || '').localeCompare(b.subject || '');
+      });
+
+      if (!filtered.length) {
+        el.innerHTML = '<div style="color:var(--text-muted);font-size:0.88rem;padding:10px;text-align:center;">موردی نیست — از فرم بالا اضافه کن</div>';
         return;
       }
-      el.innerHTML = keys.slice(0, 25).map(function(k) {
-        var plan = normalizeConsultantPlan(plans[k]);
+
+      // گروه‌بندی بر اساس تاریخ
+      var groups = {};
+      var order = [];
+      filtered.forEach(function(it) {
+        var k = jalaliToKey(String(it.date).replace(/-/g, '/'));
+        if (!groups[k]) { groups[k] = []; order.push(k); }
+        groups[k].push(it);
+      });
+
+      el.innerHTML = order.map(function(k) {
         var isToday = k === todayKey;
-        var body = '';
-        CONSULTANT_FIELDS.forEach(function(f) {
-          if (plan && plan[f] && String(plan[f]).trim()) {
-            body += '<div style="font-size:0.88rem;margin-top:3px;"><span style="color:var(--accent);">' + f + ':</span> ' + escapeHtml(plan[f]) + '</div>';
-          }
-        });
-        if (!body && typeof plans[k] === 'string') body = '<div style="font-size:0.9rem;margin-top:4px;">' + escapeHtml(plans[k]) + '</div>';
-        return '<div style="padding:10px 12px;margin-bottom:6px;border-radius:var(--radius-sm);border:1px solid var(--border);background:var(--bg-input);cursor:pointer;" onclick="document.getElementById(\'consultantDate\').value=\'' + k.replace(/-/g,'/') + '\';loadConsultantFields(\'' + k + '\');viewConsultantSelected();">' +
-          '<div style="font-weight:600;color:var(--accent);">' + toPersian(k) + (isToday ? ' (امروز)' : '') + '</div>' + body + '</div>';
+        var weekday = '';
+        try {
+          var pd = parseJalali(k);
+          if (pd) weekday = getWeekdayFa(pd);
+        } catch (e) {}
+        var head = '<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">' +
+          '<strong style="color:var(--gold-soft, var(--gold));">📅 ' + toPersian(k) + (weekday ? ' — ' + weekday : '') + (isToday ? ' <span style="color:var(--success);font-size:0.8rem;">(امروز)</span>' : '') + '</strong></div>';
+        var body = groups[k].map(function(it) {
+          var m = consultantMeta(it.subject);
+          return '<div style="padding:10px 12px;margin-bottom:6px;border-radius:var(--radius-sm);border:1px solid var(--border);border-right:3px solid ' + m.color + ';background:var(--bg-input);">' +
+            '<div style="display:flex;justify-content:space-between;gap:8px;align-items:flex-start;flex-wrap:wrap;">' +
+            '<div style="flex:1;min-width:140px;">' +
+            '<span style="font-weight:700;color:' + m.color + ';">' + m.icon + ' ' + escapeHtml(it.subject) + '</span>' +
+            '<div style="margin-top:4px;font-size:0.92rem;line-height:1.65;">' + escapeHtml(it.text) + '</div>' +
+            '</div>' +
+            '<span style="display:flex;gap:6px;flex-shrink:0;">' +
+            '<button type="button" class="btn btn-sm" onclick="editConsultantItem(\'' + it.id + '\')">✏️</button>' +
+            '<button type="button" class="session-delete" onclick="deleteConsultantItem(\'' + it.id + '\')">×</button>' +
+            '</span></div></div>';
+        }).join('');
+        return '<div style="margin-bottom:14px;">' + head + body + '</div>';
       }).join('');
     }
     function renderTodayPlanBanner() {
       var banner = document.getElementById('todayPlanBanner');
       var textEl = document.getElementById('todayPlanBannerText');
+      var dateEl = document.getElementById('todayPlanBannerDate');
       if (!banner || !textEl) return;
-      var plans = getConsultantPlans();
+      var items = getConsultantItems();
       var todayKey = jalaliToKey(toJalaliStr());
-      var plan = normalizeConsultantPlan(plans[todayKey]);
-      var txt = formatConsultantPlan(plan);
-      if (txt) {
-        textEl.textContent = txt;
-        banner.style.display = '';
-      } else {
+      var todayItems = items.filter(function(it) {
+        return jalaliToKey(String(it.date).replace(/-/g, '/')) === todayKey;
+      });
+      if (!todayItems.length) {
         banner.style.display = 'none';
+        return;
       }
+      banner.style.display = '';
+      if (dateEl) {
+        var weekday = '';
+        try {
+          var pd = parseJalali(todayKey);
+          if (pd) weekday = getWeekdayFa(pd);
+        } catch (e) {}
+        dateEl.textContent = toPersian(todayKey) + (weekday ? ' · ' + weekday : '');
+      }
+      textEl.innerHTML = todayItems.map(function(it) {
+        var m = consultantMeta(it.subject);
+        return '<div style="display:flex;gap:10px;align-items:flex-start;padding:10px 12px;border-radius:10px;border:1px solid var(--border);background:var(--bg-input);border-right:3px solid ' + m.color + ';">' +
+          '<span style="font-size:1.25rem;line-height:1;">' + m.icon + '</span>' +
+          '<div style="flex:1;">' +
+          '<div style="font-weight:700;color:' + m.color + ';margin-bottom:2px;">' + escapeHtml(it.subject) + '</div>' +
+          '<div style="font-size:0.92rem;line-height:1.65;color:var(--text);">' + escapeHtml(it.text) + '</div>' +
+          '</div></div>';
+      }).join('');
     }
+    // سازگاری با نام‌های قدیمی (اگر جایی صدا زده شوند)
+    function saveConsultantPlan() { saveConsultantItem(); }
+    function deleteConsultantPlan() { showToast('روی × کنار هر درس بزن', true); }
+    function viewConsultantSelected() { renderConsultantPlans(); }
+    function loadConsultantFields() {}
 
     // ===== منابع ماز =====
     function getMazData() {
@@ -4854,7 +5739,7 @@
       else { g.addColorStop(0, '#f8fffe'); g.addColorStop(1, '#ccfbf1'); }
       ctx.fillStyle = g; ctx.fillRect(0, 0, width, height);
       var cardBg = isDark ? '#10202a' : '#f8fffe';
-      var accent = isDark ? '#2dd4bf' : '#0d9488';
+      var accent = isDark ? '#c4b5a0' : '#6b6358';
       var textCol = isDark ? '#f5f0e6' : '#1a2e2c';
       var muted = isDark ? '#a8c5c0' : '#3d6b66';
       var border = isDark ? 'rgba(212,168,75,0.4)' : 'rgba(13,148,136,0.28)';
